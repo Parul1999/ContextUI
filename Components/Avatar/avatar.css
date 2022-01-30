@@ -1,19 +1,14 @@
 /* Letter Avatar */
 .letter-avatar,.icon-avatar{
+    align-items: center;
     background-color: var(--secondary-color);
     border-radius: 50%;
-    display: inline-block;
+    display: flex;
     height: 50px;
-    position: relative;
+    justify-content: center;
     width: 50px;
 }
-.letter-avatar-text{
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-family: var(--font-style);
-}
+
 /*Image Avatar*/
 .img-avatar{
     display: inline-block;
@@ -22,11 +17,4 @@
     border-radius: 50%;
     height: 50px;
     width: 50px;
-}
-/*Icon Avatar*/
-.icon-avatar>span{
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
 }
