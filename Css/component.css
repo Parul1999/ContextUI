@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+@import url('./reset.css');
+@import url('/Components/Avatar/avatar.css');
+@import url('/Components/Badge/badge.css');
+
+:root{
+    --primary-color:#2dd4bf;
+    --secondary-color:#f0fdfa;
+    --online-color:#22c55e;
+    --offline-color:#ef4444;
+    --font-style:cursive;
+}

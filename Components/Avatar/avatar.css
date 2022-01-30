@@ -1,0 +1,32 @@
+/* Letter Avatar */
+.letter-avatar,.icon-avatar{
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: inline-block;
+    height: 50px;
+    position: relative;
+    width: 50px;
+}
+.letter-avatar-text{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-style);
+}
+/*Image Avatar*/
+.img-avatar{
+    display: inline-block;
+}
+.img-avatar>img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+/*Icon Avatar*/
+.icon-avatar>span{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
