@@ -1,0 +1,70 @@
+/*Container*/
+.icon-badge-container,.img-badge-container,.letter-badge-container{
+    display:flex;
+    margin:2rem 0;
+}
+
+/*Badge*/
+.badge-online{
+    border-radius: 50%;
+    background: var(--online-color);;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 3px;
+    right: 3px;
+}
+.badge-offline{
+    border-radius: 50%;
+    background: var(--offline-color);
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 3px;
+    right: 3px;
+}
+
+/* Letter badge */
+.letter-badge{
+    align-items: center;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: flex;
+    height: 50px;
+    position: relative;
+    justify-content: center;
+    width: 50px;
+}
+.letter-badge-text{
+    font-family: var(--font-style);
+}
+/*Image badge*/
+.img-badge,.icon-badge{
+    display: flex;
+    position: relative;
+}
+.img-badge>img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+/*Icon badge*/
+.icon-badge{
+    align-self:flex-end;
+display:flex;
+margin-right: 1rem;
+text-align: center;
+}
+.badge-number{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    bottom: 20px;
+    height: 20px;
+    left: 15px;
+    padding: 2px;
+    position: absolute;
+    width: max-content;
+}
+.google-icon{
+    font-size: 2rem;
+}
