@@ -1,12 +1,29 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
-@import url('./reset.css');
-@import url('/Components/Avatar/avatar.css');
-@import url('/Components/Badge/badge.css');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Sora:wght@400&display=swap');
+@import url("reset.css");
+@import url("../Components/Avatar/avatar.css");
+@import url("../Components/Badge/badge.css");
+@import url("../Components/Alert/Alert.css");
+@import url("../Components/Button/Button.css");
 
 :root{
     --primary-color:#2dd4bf;
     --secondary-color:#f0fdfa;
+    --font-style: 'Sora', sans-serif;
+     /* Badges */
     --online-color:#22c55e;
     --offline-color:#ef4444;
-    --font-style:cursive;
+    /*Alert and Buttons*/
+    --warning-color:#ec942f;
+    --warning-bg-color:#fdeeaf;
+    --info-color:#0284c7;
+    --info-bg-color:#dceffa;
+    --success-color:#129c70;
+    --success-bg-color:#d7faea;
+    --error-color:#e63636;
+    --error-bg-color:#fadcdc;
+    /*Buttons*/
+    --disabled-color:#64748b;
+    --disabled-bg-color:#dae2ec;
+    
 }
