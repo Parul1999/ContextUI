@@ -1,3 +1,9 @@
+/*Container*/
+.icon-badge-container,.img-badge-container,.letter-badge-container{
+    display:flex;
+    margin:2rem 0;
+}
+
 /*Badge*/
 .badge-online{
     border-radius: 50%;
@@ -18,26 +24,23 @@
     right: 3px;
 }
 
-
 /* Letter badge */
 .letter-badge{
+    align-items: center;
     background-color: var(--secondary-color);
     border-radius: 50%;
-    display: inline-block;
+    display: flex;
     height: 50px;
     position: relative;
+    justify-content: center;
     width: 50px;
 }
 .letter-badge-text{
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
     font-family: var(--font-style);
 }
 /*Image badge*/
 .img-badge,.icon-badge{
-    display: inline-block;
+    display: flex;
     position: relative;
 }
 .img-badge>img{
@@ -46,16 +49,22 @@
     width: 50px;
 }
 /*Icon badge*/
-.icon-badge>span{
-    font-size: 2rem;
+.icon-badge{
+    align-self:flex-end;
+display:flex;
+margin-right: 1rem;
+text-align: center;
 }
 .badge-number{
     background-color: var(--primary-color);
     border-radius: 10px;
     bottom: 20px;
     height: 20px;
-    left: 20px;
+    left: 15px;
     padding: 2px;
     position: absolute;
     width: max-content;
+}
+.google-icon{
+    font-size: 2rem;
 }
