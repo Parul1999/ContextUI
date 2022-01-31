@@ -1,3 +1,8 @@
+/*Container*/
+.icon-avatar-container,.img-avatar-container,.letter-avatar-container{
+    display:flex;
+    margin:2rem 0;
+}
 /* Letter Avatar */
 .letter-avatar,.icon-avatar{
     align-items: center;
