@@ -17,6 +17,7 @@
   align-items: center;
   display: flex;
   gap: 2rem;
+  margin-bottom: 9.6px;
 }
 .footer-only-icons {
   justify-content: flex-end;
@@ -80,11 +81,16 @@
 }
 .txt-media-header {
     bottom: 1rem;
+    color: var(--secondary-color);
+    padding: 4.8px;
   position: absolute;
 }
 .basic-head-card-header {
   display: flex;
   flex-direction: column;
+}
+.basic-head-header{
+    padding-bottom: 6.4px;
 }
 .basic-head-img {
   order: 1;
