@@ -1,0 +1,101 @@
+.card-col {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid var(--disabled-bg-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 2rem auto;
+  padding: 8px;
+  width: 20rem;
+  font-style: var(--font-style);
+}
+.card-img {
+  width: 100%;
+}
+.footer {
+  align-items: center;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 9.6px;
+}
+.footer-only-icons {
+  justify-content: flex-end;
+}
+
+.card-with-horiz-badge {
+  position: relative;
+}
+.card-with-horiz-badge::after {
+  background: var(--primary-color);
+  border-radius: 3px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px,
+    rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+  color: white;
+  content: "30% OFF Sale";
+  display: inline-block;
+  overflow: hidden;
+  padding: 5px;
+  position: absolute;
+  right: -1.41rem;
+  text-align: center;
+  text-overflow: ellipsis;
+  top: 6.4px;
+  width: 5.1rem;
+  white-space: nowrap;
+}
+.card-with-horiz-badge::before {
+  background-color: var(--primary-color);
+  box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px,
+    rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+  content: "";
+  height: 2rem;
+  left: 20rem;
+  position: absolute;
+  width: 2rem;
+  top: 1rem;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+/* To give shadow to a card */
+.card-shadow {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border: 1px solid transparent;
+}
+
+.card-horizontal > div {
+  display: flex;
+}
+.card-head-dismiss {
+  display: flex;
+  justify-content: space-between;
+}
+.card-horizontal > div > .card-img {
+  margin-right: 1rem;
+  width: 50%;
+}
+.txt-media-card-header {
+  position: relative;
+}
+.txt-media-header {
+    bottom: 1rem;
+    color: var(--secondary-color);
+    padding: 4.8px;
+  position: absolute;
+}
+.basic-head-card-header {
+  display: flex;
+  flex-direction: column;
+}
+.basic-head-header{
+    padding-bottom: 6.4px;
+}
+.basic-head-img {
+  order: 1;
+}
+
+.dismiss-icon {
+  cursor: pointer;
+}
