@@ -58,6 +58,7 @@ body{
  
   .label{
     background-color:white ;
+    font-size: 0.9rem;
     width: max-content;
   }
   .invalid-input{
