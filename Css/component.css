@@ -6,6 +6,7 @@
 @import url("../Components/Alert/alert.css");
 @import url("../Components/Button/button.css");
 @import url("../Components/Cards/cards.css");
+@import url("../Components/List/list.css");
 
 :root{
     --primary-color:#2dd4bf;
@@ -27,4 +28,7 @@
     --disabled-color:#64748b;
     --disabled-bg-color:#dae2ec;
     
+}
+body{
+    font-style: var(--font-style);
 }

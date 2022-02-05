@@ -1,0 +1,16 @@
+.list-wrap{
+    width: 80%;
+}
+.list-item{
+    align-items: center;
+    border: 2px solid var(--secondary-color);
+    display: flex;
+    height: 4rem;
+    list-style: none;
+}
+
+.list-item>img{
+    border-radius: 50%;
+    height:50%;
+    margin:1rem;
+}
