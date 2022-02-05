@@ -44,7 +44,7 @@ body{
   .input:not(:placeholder-shown) + .label,
   .input:focus + .label {
     cursor: pointer;
-    transform: translate(2rem, 5px) scale(1);
+    transform: translate(1rem, 11px) scale(1);
   }
 
   .input {
