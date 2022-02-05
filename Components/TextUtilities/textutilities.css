@@ -1,0 +1,27 @@
+.heading-wrap{
+    display: flex;
+    flex-direction: column;
+    gap:10px
+}
+.heading-wrap{
+    border: 1px solid;
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    padding: 2rem;
+    width: max-content;
+}
+.heading-wrap > * {
+    border-bottom: 1px solid gray;
+    padding: 6px;
+}
+.grey-txt{
+    color: var(--dark-grey-color);
+}
+.txt-wrapper{
+    border:1px solid black;
+    margin: 2%;
+    padding: 1%;
+    width: 40%;
+}
+.center{
+    text-align: center;
+}

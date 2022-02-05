@@ -1,16 +1,36 @@
 .list-wrap{
     width: 80%;
 }
+.simple-list-wrap{
+    border: 1px solid;
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    padding: 10px;
+    width: 15%;
+}
 .list-item{
     align-items: center;
-    border: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
     display: flex;
     height: 4rem;
     list-style: none;
+    margin: 0.3rem 0;
 }
 
 .list-item>img{
     border-radius: 50%;
     height:50%;
     margin:1rem;
+}
+.list-subheading{
+    color: var( --dark-grey-color);
+}
+.simple-list-item{
+    list-style: square;
+}
+.simple-nested-list{
+  list-style: upper-roman;
+}
+.simple-list-item,.simple-nested-list>li{
+    margin: 10px;
 }

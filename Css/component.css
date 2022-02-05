@@ -7,7 +7,7 @@
 @import url("../Components/Button/button.css");
 @import url("../Components/Cards/cards.css");
 @import url("../Components/List/list.css");
-
+@import url("../Components/TextUtilities/textutilities.css");
 :root{
     --primary-color:#2dd4bf;
     --secondary-color:#f0fdfa;
@@ -27,8 +27,9 @@
     /*Buttons*/
     --disabled-color:#64748b;
     --disabled-bg-color:#dae2ec;
+    --dark-grey-color:#a3a2a2;
     
 }
 body{
-    font-style: var(--font-style);
+    font-family: var(--font-style);
 }
