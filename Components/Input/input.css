@@ -21,7 +21,7 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     transform-origin: left 0;
-    transform: translate(10px, 2rem) scale(1.5);
+    transform: translate(10px, 2rem) scale(1);
     white-space: nowrap;
   }
   /**
@@ -44,7 +44,7 @@ body{
   .input:not(:placeholder-shown) + .label,
   .input:focus + .label {
     cursor: pointer;
-    transform: translate(2rem, 5px) scale(1.5);
+    transform: translate(2rem, 5px) scale(1);
   }
 
   .input {
@@ -52,7 +52,8 @@ body{
     border:2px solid black ;
     cursor: text;
     max-width: 66.66%;
-    padding: 1.2rem;
+    padding: 0.7rem;
+    outline: none;
   }
  
   .label{
