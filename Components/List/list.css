@@ -10,7 +10,7 @@
 .list-item{
     align-items: center;
     border-bottom: 2px solid var(--secondary-color);
-    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    box-shadow: rgb(0 0 0 / 25%) 2px 1.90px 2.5px;
     display: flex;
     height: 4rem;
     list-style: none;
