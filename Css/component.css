@@ -8,6 +8,8 @@
 @import url("../Components/Cards/cards.css");
 @import url("../Components/Snackbar/snackbar.css");
 @import url("../Components/Rating/rating.css");
+@import url("../Components/Image/image.css");
+@import url("../Components/Input/input.css");
 
 :root{
     --primary-color:#2dd4bf;
@@ -28,8 +30,15 @@
     /*Buttons*/
     --disabled-color:#64748b;
     --disabled-bg-color:#dae2ec;
+    --dark-grey-color:#a3a2a2;
+    --grey-color:#d3d3d3d3;
     
 }
+<<<<<<< HEAD
 button{
     cursor: pointer;
+=======
+body{
+    font-family: var(--font-style);
+>>>>>>> dev
 }
