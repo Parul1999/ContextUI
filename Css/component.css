@@ -28,6 +28,10 @@
     /*Buttons*/
     --disabled-color:#64748b;
     --disabled-bg-color:#dae2ec;
+    --dark-grey-color:#a3a2a2;
     --grey-color:#d3d3d3d3;
     
+}
+body{
+    font-family: var(--font-style);
 }
