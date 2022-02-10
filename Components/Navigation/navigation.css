@@ -21,7 +21,7 @@
 }
 .desktop-list-item {
   margin-right: 2rem;
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
   font-weight: bolder;
   text-decoration: none;
 }
