@@ -4,7 +4,7 @@ const baseline = document.querySelector(".snackbar-baseline");
 const leading = document.querySelector(".snackbar-leading");
 const stacked = document.querySelector(".snackbar-stacked");
 
-function baselineClick()
+const baselineClick=()=>
 {
     snackbar.style.cssText = `
     display: flex; 
@@ -16,7 +16,7 @@ function baselineClick()
         closeClick()
     },[5000])
 }
-function leadingClick()
+const leadingClick=()=>
 {
     snackbar.style.cssText = `
     display: flex; 
@@ -25,7 +25,7 @@ function leadingClick()
         closeClick()
     },[5000])
 }
-function stackedClick()
+const stackedClick=()=>
 {
     snackbar.style.cssText = `
     display: flex; 
@@ -38,7 +38,7 @@ function stackedClick()
         closeClick()
     },[5000])
 }
-function closeClick()
+const closeClick=()=>
 {
 snackbar.style.display ="none"
 }

@@ -1,9 +1,9 @@
 const stars = document.querySelectorAll(".full-star");
 const rating = document.querySelector(".rating");
 
-function highlightStars(e) {
+const highlightStars=(e)=> {
     const i = [...stars].indexOf(e.target);
-    
+
      for(let j=0;j<stars.length;j++){
          if(j<=i)
         stars[j].classList.add("full-star-active");
