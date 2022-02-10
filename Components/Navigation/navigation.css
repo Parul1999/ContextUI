@@ -1,0 +1,27 @@
+.navbar{
+    background: linear-gradient(
+        to top,
+        var(--primary-color) 0%,
+        var(--secondary-color) 20%
+      );
+      box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+      color: var(--primary-color);
+      display: flex;
+      padding: 1.5rem;
+}
+.desktop-nav {
+  justify-content: space-between;
+  position:sticky;
+}
+.desktop-nav-list {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.desktop-list-item {
+  margin-right: 2rem;
+  color: var(--primary-color);
+  font-weight: bolder;
+  text-decoration: none;
+}

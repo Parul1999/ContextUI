@@ -11,9 +11,10 @@
 @import url("../Components/Rating/rating.css");
 @import url("../Components/Image/image.css");
 @import url("../Components/Input/input.css");
+@import url("../Components/Navigation/navigation.css");
 
 :root{
-    --primary-color:#2dd4bf;
+    --primary-color:#134e4a;
     --secondary-color:#f0fdfa;
     --font-style: 'Sora', sans-serif;
      /* Badges */
