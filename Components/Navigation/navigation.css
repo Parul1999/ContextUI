@@ -15,6 +15,12 @@
   justify-content: space-between;
   list-style: none;
 }
+@media only screen and (max-width: 485px){
+  .desktop-nav-list {
+    flex-direction: column;
+  }
+}
+
 .desktop-list-item {
   margin-right: 2rem;
   color: var(--primary-color);

@@ -33,7 +33,7 @@ body {
   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
 }
 #logo {
-  width: 45%;
+  width: 10rem;
 }
 /* Main Styling */
 .doc-iframe {

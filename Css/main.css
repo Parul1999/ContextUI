@@ -27,6 +27,15 @@ body{
   flex-direction: row;
   margin-top: 3rem;
 }
+@media only screen and (max-width: 999px){
+  .panel {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    text-align: center;
+  }
+}
 .hero-img-wrapper {
   width: auto;
 }
