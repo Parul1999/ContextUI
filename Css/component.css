@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Sora:wght@400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Sora:wght@400&display=swap");
 @import url("reset.css");
 @import url("../Components/Avatar/avatar.css");
 @import url("../Components/Badge/badge.css");
@@ -12,35 +11,55 @@
 @import url("../Components/Image/image.css");
 @import url("../Components/Input/input.css");
 @import url("../Components/Navigation/navigation.css");
+@import url("../Components/List/list.css");
+@import url("../Components/TextUtilities/textutilities.css");
 
-:root{
-    --primary-color:#134e4a;
-    --secondary-color:#f0fdfa;
-    --font-style: 'Sora', sans-serif;
-     /* Badges */
-    --online-color:#22c55e;
-    --offline-color:#ef4444;
-    /*Alert and Buttons*/
-    --warning-color:#ec942f;
-    --warning-bg-color:#fdeeaf;
-    --info-color:#0284c7;
-    --info-bg-color:#dceffa;
-    --success-color:#129c70;
-    --success-bg-color:#d7faea;
-    --error-color:#e63636;
-    --error-bg-color:#fadcdc;
+:root {
+  --primary-color: #134e4a;
+  --secondary-color: #f0fdfa;
+  --font-style: "Sora", sans-serif;
+  /* Badges */
+  --online-color: #22c55e;
+  --offline-color: #ef4444;
+  /*Alert and Buttons*/
+  --warning-color: #ec942f;
+  --warning-bg-color: #fdeeaf;
+  --info-color: #0284c7;
+  --info-bg-color: #dceffa;
+  --success-color: #129c70;
+  --success-bg-color: #d7faea;
+  --error-color: #e63636;
+  --error-bg-color: #fadcdc;
 
-    --disabled-color:#64748b;
-    --disabled-bg-color:#dae2ec;
-    --dark-grey-color:#a3a2a2;
-    --grey-color:#d3d3d3d3;
+  --disabled-color: #64748b;
+  --disabled-bg-color: #dae2ec;
+  --dark-grey-color: #a3a2a2;
+  --grey-color: #d3d3d3d3;
 
-    --gold-color:#ffd900e1;
-    
+  --gold-color: #ffd900e1;
 }
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
 }
-body{
-    font-family: var(--font-style);
+body {
+  font-family: var(--font-style);
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-image: linear-gradient(
+    180deg,
+    var(--secondary-color) 0%,
+    var(--primary-color) 99%
+  );
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
 }

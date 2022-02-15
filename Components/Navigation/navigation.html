@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/Css/component.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+        integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+        crossorigin="anonymous" />
+    <link href="/Css/documentation.css" rel="stylesheet" />
     <title>Navigation</title>
-  </head>
-  <body>
+</head>
+
+<body>
+    <!-- Documentation Code -->
+    <h1 class="doc-heading">Navigation</h1>
+    <p class="doc-txt">
+        Navigation act as header to most of the sites.
+    </p>
+
     <!-- Desktop Navigation -->
-    <nav class="desktop-nav navbar">
-      <h1>Sharky UI</h1>
-      <ul class="desktop-nav-list">
-        <li>
-          <a href="" class="desktop-list-item"> Introduction </a>
-        </li>
-        <li>
-          <a href="" class="desktop-list-item"> Documentation</a>
-        </li>
-        <li>
-          <a href="" class="desktop-list-item"> Installation</a>
-        </li>
-      </ul>
-    </nav>
-  </body>
+    <h2 class="doc-sub-heading">• Desktop Navigation</h2>
+    <p class="doc-txt">
+      It is the navbar used in desktop sites. 
+    </p>
+    <div class="content-container">
+        <nav class="desktop-nav navbar">
+            <h1>Sharky UI</h1>
+            <ul class="desktop-nav-list">
+                <li>
+                    <a href="" class="desktop-list-item"> Introduction </a>
+                </li>
+                <li>
+                    <a href="" class="desktop-list-item"> Documentation</a>
+                </li>
+                <li>
+                    <a href="" class="desktop-list-item"> Installation</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Code-Snipet -->
+    <div class="example-code" id="nav-example-code">
+        <pre>
+          <code class="html">
+&lt;nav class="desktop-nav navbar"&gt;
+    &lt;h1&gt;Sharky UI&lt;/h1&gt;
+ &lt;ul class="desktop-nav-list"&gt;
+   &lt;li&gt;
+     &lt;a href="" class="desktop-list-item"&gt; Introduction &lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+     &lt;a href="" class="desktop-list-item"&gt; Documentation&lt;/a&gt;
+   &lt;/li&gt;
+   &lt;li&gt;
+     &lt;a href="" class="desktop-list-item"&gt; Installation&lt;/a&gt;
+   &lt;/li&gt;
+ &lt;/ul&gt;
+&lt;/nav&gt;
+      </code>
+  </pre>
+    </div>
+    <!-- Icons to Copy and Expand Code -->
+    <div class="icons-container">
+        <a href="#nav-example-code">
+            <span class="material-icons-outlined" onclick="expandCollapse('#nav-example-code')">
+                open_in_full
+            </span>
+        </a>
+        <span class="material-icons-outlined" onclick="copyToClipboard('#nav-example-code')">
+            content_copy
+        </span>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="/Docs/script.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
 </html>

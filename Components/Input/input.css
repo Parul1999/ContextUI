@@ -1,6 +1,4 @@
-body{
-    font-family: var(--font-style);
-}
+
   /**
   * Make the field a flex-container, reverse the order so label is on top.
   */

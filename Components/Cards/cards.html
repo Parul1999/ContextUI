@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/Css/component.css" rel="stylesheet" />
-    <title>Cards</title>
-  </head>
-  <body>
-    <!-- Card with Badge -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+    integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+    crossorigin="anonymous" />
+  <link href="/Css/documentation.css" rel="stylesheet" />
+  <link href="/Css/component.css" rel="stylesheet" />
+  <title>Cards</title>
+</head>
+
+<body>
+  <!-- Documentation Code -->
+  <h1 class="doc-heading">Cards</h1>
+  <p class="doc-txt">
+    Cards contain content and actions about a single subject.
+  </p>
+  <h2 class="doc-sub-heading">Examples :</h2>
+
+  <!-- Card with Badge -->
+  <h2 class="doc-sub-heading">• Card with Badge</h2>
+  
+  <div class="content-container">
+    <!-- Card -->
     <div title="30% OFF Sale" class="card-col basic-card card-with-horiz-badge">
       <div>
         <header>
@@ -25,24 +42,56 @@
         <h5>BOOKMARK</h5>
       </footer>
     </div>
+  </div>
+  <!-- Code-Snipet -->
+  <div class="example-code" id="badge-card-example-code">
+    <pre>
+<code class="html">
+  &lt;div title="30% OFF Sale" class="card-col basic-card card-with-horiz-badge"&gt;
+    &lt;div&gt;
+      &lt;header&gt;
+        &lt;h2&gt;Our Changing Planet&lt;/h2&gt;
+        &lt;p&gt;by Kurt Wagner&lt;/p&gt;
+      &lt;/header&gt;
+    &lt;/div&gt;
+    &lt;p&gt;
+      Visit ten places on our planet that are undergoing the biggest changes
+      today.
+    &lt;/p&gt;
+    &lt;footer class="footer"&gt;
+      &lt;h5&gt;READ&lt;/h5&gt;
+      &lt;h5&gt;BOOKMARK&lt;/h5&gt;
+    &lt;/footer&gt;
+  &lt;/div&gt;
+        </code>
+    </pre>
+  </div>
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#badge-card-example-code">
+      <span class="material-icons-outlined" onclick="expandCollapse('#badge-card-example-code')">
+        open_in_full
+      </span>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#badge-card-example-code')">
+      content_copy
+    </span>
+  </div>
 
-    <!-- Card with Dismiss Button -->
-    <div class="card-col basic-head-card card-dismiss ">
+
+  <!-- Card with Dismiss Button -->
+  <h2 class="doc-sub-heading">• Card with Dismiss Button</h2>
+  <div class="content-container">
+    <!-- Card -->
+    <div class="card-col basic-head-card card-dismiss">
       <div class="basic-head-card-header">
-        <img
-          class="card-img basic-head-img"
-          src="/Assets/card.png"
-          type="image/png"
-          alt="card"
-        />
+        <img class="card-img basic-head-img" src="/Assets/card.png" type="image/png" alt="card" />
         <div class="card-head-dismiss">
-        <header class="basic-head-header">
-          <h2>Our Changing Planet</h2>
-          <p>by Kurt Wagner</p>
-        </header>
-        <span class="material-icons-outlined dismiss-icon">
-          cancel
-          </span>
+          <header class="basic-head-header">
+            <h2>Our Changing Planet</h2>
+            <p>by Kurt Wagner</p>
+          </header>
+          <span class="material-icons-outlined dismiss-icon"> cancel </span>
         </div>
       </div>
       <p>
@@ -57,8 +106,54 @@
         <span class="material-icons-outlined"> more_vert </span>
       </footer>
     </div>
+  </div>
+  <!-- Code-Snipet -->
+  <div class="example-code" id="dismiss-card-example-code">
+    <pre>
+            <code class="html">
+ &lt;div class="card-col basic-head-card card-dismiss"&gt;
+   &lt;div class="basic-head-card-header"&gt;
+     &lt;img class="card-img basic-head-img" src="/Assets/card.png" type="image/png" alt="card" /&gt;
+     &lt;div class="card-head-dismiss"&gt;
+       &lt;header class="basic-head-header"&gt;
+         &lt;h2&gt;Our Changing Planet&lt;/h2&gt;
+         &lt;p&gt;by Kurt Wagner&lt;/p&gt;
+       &lt;/header&gt;
+       &lt;span class="material-icons-outlined dismiss-icon"&gt; cancel &lt;/span&gt;
+     &lt;/div&gt;
+   &lt;/div&gt;
+   &lt;p&gt;
+     Visit ten places on our planet that are undergoing the biggest changes
+     today.
+   &lt;/p&gt;
+   &lt;footer class="footer"&gt;
+     &lt;h5&gt;READ&lt;/h5&gt;
+     &lt;h5&gt;BOOKMARK&lt;/h5&gt;
+     &lt;span class="material-icons-outlined"&gt; favorite_border &lt;/span&gt;
+     &lt;span class="material-icons-outlined"&gt; share &lt;/span&gt;
+     &lt;span class="material-icons-outlined"&gt; more_vert &lt;/span&gt;
+   &lt;/footer&gt;
+ &lt;/div&gt;
+        </code>
+    </pre>
+  </div>
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#dismiss-card-example-code">
+      <span class="material-icons-outlined" onclick="expandCollapse('#dismiss-card-example-code')">
+        open_in_full
+      </span>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#dismiss-card-example-code')">
+      content_copy
+    </span>
+  </div>
 
-    <!-- Text-Only Card -->
+
+
+  <!-- Text-Only Card -->
+  <h2 class="doc-sub-heading">• Text Only Card</h2>
+  <div class="content-container">
     <div class="card-col basic-card">
       <div>
         <header>
@@ -75,15 +170,49 @@
         <h5>BOOKMARK</h5>
       </footer>
     </div>
+  </div>
+  <!-- Code-Snipet -->
+  <div class="example-code" id="txt-card-example-code">
+    <pre>
+  <code class="html">
+ &lt;div class="card-col basic-card"&gt;
+   &lt;div&gt;
+     &lt;header&gt;
+       &lt;h2&gt;Our Changing Planet&lt;/h2&gt;
+       &lt;p&gt;by Kurt Wagner&lt;/p&gt;
+     &lt;/header&gt;
+   &lt;/div&gt;
+   &lt;p&gt;
+     Visit ten places on our planet that are undergoing the 
+     biggest changes today.
+   &lt;/p&gt;
+   &lt;footer class="footer"&gt;
+     &lt;h5&gt;READ&lt;/h5&gt;
+     &lt;h5&gt;BOOKMARK&lt;/h5&gt;
+   &lt;/footer&gt;
+ &lt;/div&gt;
+          </code>
+      </pre>
+  </div>
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#txt-card-example-code">
+      <span class="material-icons-outlined" onclick="expandCollapse('#txt-card-example-code')">
+        open_in_full
+      </span>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#txt-card-example-code')">
+      content_copy
+    </span>
+  </div>
 
-    <!-- Horizontal and Vertical Layout -->
+
+  <!-- Horizontal Card -->
+  <h2 class="doc-sub-heading">• Horizontal Card</h2>
+  <div class="content-container">
     <div class="card-col basic-card card-horizontal">
       <div>
-        <img
-          class="card-img basic-img"
-          src="/Assets/card.png"
-          alt="card"
-        />
+        <img class="card-img basic-img" src="/Assets/card.png" alt="card" />
 
         <header>
           <h2>Our Changing Planet</h2>
@@ -98,15 +227,50 @@
         <span class="material-icons-outlined"> more_vert </span>
       </footer>
     </div>
+  </div>
+  <!-- Code-Snipet -->
+  <div class="example-code" id="horiz-card-example-code">
+    <pre>
+    <code class="html">
+&lt;div class="card-col basic-card card-horizontal"&gt;
+  &lt;div&gt;
+    &lt;img class="card-img basic-img" src="/Assets/card.png" alt="card" /&gt;
 
+    &lt;header&gt;
+      &lt;h2&gt;Our Changing Planet&lt;/h2&gt;
+      &lt;p&gt;by Kurt Wagner&lt;/p&gt;
+    &lt;/header&gt;
+  &lt;/div&gt;
+  &lt;footer class="footer footer-only-icons"&gt;
+    &lt;h5&gt;READ&lt;/h5&gt;
+    &lt;h5&gt;BOOKMARK&lt;/h5&gt;
+    &lt;span class="material-icons-outlined"&gt; favorite_border &lt;/span&gt;
+    &lt;span class="material-icons-outlined"&gt; share &lt;/span&gt;
+    &lt;span class="material-icons-outlined"&gt; more_vert &lt;/span&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;
+            </code>
+        </pre>
+  </div>
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#horiz-card-example-code">
+      <span class="material-icons-outlined" onclick="expandCollapse('#horiz-card-example-code')">
+        open_in_full
+      </span>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#horiz-card-example-code')">
+      content_copy
+    </span>
+  </div>
+
+
+  <!-- Vertical Card -->
+  <h2 class="doc-sub-heading">• Vertical Card</h2>
+  <div class="content-container">
     <div class="card-col basic-card">
       <div>
-        <img
-          class="card-img basic-img"
-          src="/Assets/card.png"
-          alt="card"
-        />
-
+        <img class="card-img basic-img" src="/Assets/card.png" alt="card" />
         <header>
           <h2>Our Changing Planet</h2>
           <p>by Kurt Wagner</p>
@@ -120,14 +284,49 @@
         <span class="material-icons-outlined"> more_vert </span>
       </footer>
     </div>
-    <!-- Card with Text Overlay -->
+  </div>
+  <!-- Code-Snipet -->
+  <div class="example-code" id="vert-card-example-code">
+    <pre>
+      <code class="html">
+&lt;div class="card-col basic-card"&gt;
+  &lt;div&gt;
+    &lt;img class="card-img basic-img" src="/Assets/card.png" alt="card" /&gt;
+    &lt;header&gt;
+      &lt;h2&gt;Our Changing Planet&lt;/h2&gt;
+      &lt;p&gt;by Kurt Wagner&lt;/p&gt;
+    &lt;/header&gt;
+  &lt;/div&gt;
+  &lt;footer class="footer"&gt;
+    &lt;h5&gt;READ&lt;/h5&gt;
+    &lt;h5&gt;BOOKMARK&lt;/h5&gt;
+    &lt;span class="material-icons-outlined"&gt; favorite_border &lt;/span&gt;
+    &lt;span class="material-icons-outlined"&gt; share &lt;/span&gt;
+    &lt;span class="material-icons-outlined"&gt; more_vert &lt;/span&gt;
+  &lt;/footer&gt;
+&lt;/div&gt;
+              </code>
+          </pre>
+  </div>
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#vert-card-example-code">
+      <span class="material-icons-outlined" onclick="expandCollapse('#vert-card-example-code')">
+        open_in_full
+      </span>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#vert-card-example-code')">
+      content_copy
+    </span>
+  </div>
+
+
+  <!-- Card with Text Overlay -->
+  <h2 class="doc-sub-heading">• Card with Text Overlay</h2>
+  <div class="content-container">
     <div class="card-col txt-media-card">
       <div class="txt-media-card-header">
-        <img
-          class="card-img basic-img"
-          src="/Assets/card.png"
-          alt="card"
-        />
+        <img class="card-img basic-img" src="/Assets/card.png" alt="card" />
 
         <header class="txt-media-header">
           <h2>Our Changing Planet</h2>
@@ -146,14 +345,55 @@
         <span class="material-icons-outlined"> more_vert </span>
       </footer>
     </div>
-    <!-- Box-Shadow Card -->
+  </div>
+  <!-- Code-Snipet -->
+  <div class="example-code" id="txt-overlay-card-example-code">
+    <pre>
+  <code class="html">
+ &lt;div class="card-col txt-media-card"&gt;
+   &lt;div class="txt-media-card-header"&gt;
+     &lt;img class="card-img basic-img" src="/Assets/card.png" alt="card" /&gt;
+
+     &lt;header class="txt-media-header"&gt;
+       &lt;h2&gt;Our Changing Planet&lt;/h2&gt;
+       &lt;p&gt;by Kurt Wagner&lt;/p&gt;
+     &lt;/header&gt;
+   &lt;/div&gt;
+   &lt;p&gt;
+     Visit ten places on our planet that are undergoing the 
+     biggest changes today.
+   &lt;/p&gt;
+   &lt;footer class="footer"&gt;
+     &lt;h5&gt;READ&lt;/h5&gt;
+     &lt;h5&gt;BOOKMARK&lt;/h5&gt;
+     &lt;span class="material-icons-outlined"&gt; favorite_border &lt;/span&gt;
+     &lt;span class="material-icons-outlined"&gt; share &lt;/span&gt;
+     &lt;span class="material-icons-outlined"&gt; more_vert &lt;/span&gt;
+   &lt;/footer&gt;
+ &lt;/div&gt;
+          </code>
+      </pre>
+  </div>
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#txt-overlay-card-example-code">
+      <span class="material-icons-outlined" onclick="expandCollapse('#txt-overlay-card-example-code')">
+        open_in_full
+      </span>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#txt-overlay-card-example-code')">
+      content_copy
+    </span>
+  </div>
+
+
+
+  <!-- Box-Shadow Card -->
+  <h2 class="doc-sub-heading">• Card with Box-Shadow</h2>
+  <div class="content-container">
     <div class="card-col basic-card card-shadow">
       <div>
-        <img
-          class="card-img basic-img"
-          src="/Assets/card.png"
-          alt="card"
-        />
+        <img class="card-img basic-img" src="/Assets/card.png" alt="card" />
 
         <header>
           <h2>Our Changing Planet</h2>
@@ -161,16 +401,45 @@
         </header>
       </div>
       <p>
-        Visit ten places on our planet that are undergoing the biggest changes
-        today.
+        Visit ten places on our planet that are undergoing the
+        biggest changes today.
       </p>
       <footer class="footer">
         <h5>READ</h5>
         <h5>BOOKMARK</h5>
-        <span class="material-icons-outlined"> favorite_border </span>
-        <span class="material-icons-outlined"> share </span>
-        <span class="material-icons-outlined"> more_vert </span>
       </footer>
     </div>
-  </body>
+  </div>
+  <!-- Code-Snipet -->
+  <div class="example-code" id="shadow-card-example-code">
+    <pre>
+<code class="html">
+  &lt;div class="card-col basic-card card-shadow"&gt;
+  &lt;!-- Any card can act as card with box-shadow 
+          by adding class="card-shadow" --&gt;
+  &lt;/div&gt;
+      </code>
+  </pre>
+  </div>
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#shadow-card-example-code">
+      <span class="material-icons-outlined" onclick="expandCollapse('#shadow-card-example-code')">
+        open_in_full
+      </span>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#shadow-card-example-code')">
+      content_copy
+    </span>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="/Docs/script.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+</body>
+
 </html>

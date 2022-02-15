@@ -1,1 +1,69 @@
 /* CSS For Documentation Site */
+body{
+    overflow: hidden;
+}
+.doc-container{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "aside main"
+    "aside main";
+    grid-template-columns: 0fr;
+}
+
+.doc-content{
+    grid-area: main;
+    margin-bottom: 10%;
+}
+.doc-nav{
+    grid-area: header;
+    position: relative;
+}
+/* Panel Styling */
+.panel {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+.hero-img-wrapper {
+  width: auto;
+}
+.hero-img {
+  width: auto;
+  height: 100%;
+  max-height: 100vh;
+}
+.panel-heading {
+  color: var(--primary-color);
+  font-size: 3rem;
+}
+.panel-sub-heading {
+  font-size: 2rem;
+}
+.panel-btn {
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+.get-started-btn {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  margin-right: 1rem;
+}
+.get-started-btn > a {
+  text-decoration: none;
+  color: white;
+}
+.github-btn {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+.github-btn > a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bolder;
+}

@@ -1,7 +1,7 @@
 /*Container*/
 .icon-badge-container,.img-badge-container,.letter-badge-container{
     display:flex;
-    margin:2rem 0;
+    gap: 2rem;
 }
 
 /*Badge*/
@@ -9,8 +9,8 @@
     border-radius: 50%;
     background: var(--online-color);;
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 1rem;
+    height: 1rem;
     bottom: 3px;
     right: 3px;
 }
@@ -18,8 +18,8 @@
     border-radius: 50%;
     background: var(--offline-color);
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 1rem;
+    height: 1rem;
     bottom: 3px;
     right: 3px;
 }
@@ -58,13 +58,14 @@ text-align: center;
 .badge-number{
     background-color: var(--primary-color);
     border-radius: 10px;
-    bottom: 20px;
+    bottom: 2rem;
+    color:white;
     height: 20px;
-    left: 15px;
-    padding: 2px;
+    left: 1.7rem;
+    padding: 3px;
     position: absolute;
     width: max-content;
 }
 .google-icon{
-    font-size: 2rem;
+    font-size: 3rem;
 }

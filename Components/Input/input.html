@@ -1,77 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/Css/component.css" rel="stylesheet" />
-    <title>Input</title>
-  </head>
-  <body>
-    <!-- Text Input Box -->
-    <form action="">
-      <div class="field">
-        <input
-          class="input"
-          type="text"
-          name="fullname"
-          id="fullname"
-          placeholder="Parul Kohli"
-          autocomplete="off"
-        />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/Css/component.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+    integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+    crossorigin="anonymous" />
+  <link href="/Css/documentation.css" rel="stylesheet" />
+  <title>Input</title>
+</head>
+
+<body>
+
+    <!-- Documentation Code -->
+    <h1 class="doc-heading">Input</h1>
+    <p class="doc-txt">
+     Input is used to take data from the user.
+    </p>
+    <h2 class="doc-sub-heading">Examples :</h2>
+  
+  <!-- Text Input Box -->
+  <h2 class="doc-sub-heading">• Input</h2>
+  <p class="doc-txt">There are different types of input , a few as mentioned below .
+    To apply the styling to any of those input following are the things to do:
+    <ol class="doc-txt">
+      <li>Put label after the input tag </li>
+      <li>Enclose the label and input tag in a div with a class of <span class="txt-bg">field</span></li>
+    </ol>
+  </p>
+  <div class="content-container">
+  <form action="">
+      <div class="field ">
+        <input class="input" type="text" name="fullname" id="fullname" placeholder="Parul Kohli" autocomplete="off" />
         <label class="label" for="fullname">Name</label>
       </div>
-
       <div class="field">
-        <input
-          class="input"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="parul@example.com"
-          autocomplete="off"
-        />
-        <label  class="label" for="email">Email</label>
+        <input class="input" type="email" name="email" id="email" placeholder="parul@example.com" autocomplete="off" />
+        <label class="label" for="email">Email</label>
       </div>
       <div class="field">
-        <input
-          class="input"
-          type="password"
-          name="password"
-          id="password"
-          placeholder="*******"
-          autocomplete="off"
-        />
+        <input class="input" type="password" name="password" id="password" placeholder="*" autocomplete="off" />
         <label class="label" for="password">Password</label>
       </div>
-    </form>
+  </form>
+</div>
+    <!-- Code-Snipet -->
+    <div class="example-code" id="inp-example-code">
+      <pre>
+          <code class="html">
+ &lt;div class="field"&gt;
+   &lt;input class="input" type="password" name="password" id="password" placeholder="*" autocomplete="off" /&gt;
+   &lt;label class="label" for="password"&gt;Password&lt;/label&gt;
+ &lt;/div&gt;
+      </code>
+  </pre>
+    </div>
+    <!-- Icons to Copy and Expand Code -->
+    <div class="icons-container">
+      <a href="#inp-example-code">
+        <span class="material-icons-outlined" onclick="expandCollapse('#inp-example-code')">
+          open_in_full
+        </span>
+      </a>
+      <span class="material-icons-outlined" onclick="copyToClipboard('#inp-example-code')">
+        content_copy
+      </span>
+    </div>
 
-  
-    <!-- Valid and Invalid Text Boxes -->
-    <form action="">
+
+  <!-- Valid and Invalid Text Boxes -->
+  <h2 class="doc-sub-heading">• Input with validations</h2>
+  <p class="doc-txt">Input can be a valid or invalid input as per the conditions
+    If an input is valid add class <span class="txt-bg">valid-input</span> to input tag 
+    and <span class="txt-bg">valid-label</span> to the label tag.
+    Similarly <span class="txt-bg">invalid-input</span> and <span class="txt-bg">invalid-label</span>
+    to the invalid input
+  </p>
+  <form action="">
+    <div class="content-container">
       <div class="field">
-        <input
-          class="valid-input input"
-          type="text"
-          name="name"
-          id="name"
-          placeholder="Parul Kohli"
-          autocomplete="off"
-        />
+        <input class="valid-input input" type="text" name="name" id="name" placeholder="Parul Kohli"
+          autocomplete="off" />
         <label for="name" class="label valid-label">Name</label>
       </div>
 
-      <div class="field">
-        <input
-          class="invalid-input input"
-          type="emailId"
-          name="emailId"
-          id="emailId"
-          placeholder="parul@example.com"
-          autocomplete="off"
-        />
+      <div class="field ">
+        <input class="invalid-input input" type="emailId" name="emailId" id="emailId" placeholder="parul@example.com"
+          autocomplete="off" />
         <label class="label invalid-label" for="emailId">Email</label>
       </div>
-    </form>
-  </body>
+    </div>
+
+    <!-- Code-Snipet -->
+    <div class="example-code" id="validation-example-code">
+      <pre>
+          <code class="html">
+ &lt;div class="field "&gt;
+   &lt;input class="invalid-input input" type="emailId" name="emailId" 
+   id="emailId" placeholder="parul@example.com"
+     autocomplete="off" /&gt;
+   &lt;label class="label invalid-label" for="emailId"&gt;Email&lt;/label&gt;
+ &lt;/div&gt;
+</code>
+  </pre>
+    </div>
+
+    <!-- Icons to Copy and Expand Code -->
+    <div class="icons-container">
+      <a href="#validation-example-code">
+        <span class="material-icons-outlined" onclick="expandCollapse('#validation-example-code')">
+          open_in_full
+        </span>
+      </a>
+      <span class="material-icons-outlined" onclick="copyToClipboard('#validation-example-code')">
+        content_copy
+      </span>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="/Docs/script.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </form>
+</body>
+
 </html>

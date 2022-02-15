@@ -1,17 +1,13 @@
 .navbar{
-    background: linear-gradient(
-        to top,
-        var(--primary-color) 0%,
-        var(--secondary-color) 20%
-      );
       box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
       color: var(--primary-color);
       display: flex;
       padding: 1.5rem;
+      z-index: 1;
 }
 .desktop-nav {
   justify-content: space-between;
-  position:sticky;
+  font-size: 1.3rem;
 }
 .desktop-nav-list {
   align-items: center;
