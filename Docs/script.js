@@ -4,6 +4,7 @@ const content = document.querySelector(".doc-iframe");
 const openDocs = document.querySelector(".nav-doc-click");
 const hamburger = document.querySelector(".responsive-hamburger");
 const sidebar = document.querySelector(".doc-sidebar-on-top");
+const closeSidebar = document.querySelector(".close-sidebar")
 const styleSelected = {
     "background-color": "var(--primary-color)",
     color: "white",
@@ -107,3 +108,8 @@ const showHideSidebar=(e)=>{
   sidebar.classList.toggle("display-sidebar-on-top")
 }
 hamburger.addEventListener("click",(e)=>showHideSidebar(e))
+
+const hideSidebar=(e)=>{
+  sidebar.classList.remove("display-sidebar-on-top")
+}
+closeSidebar.addEventListener("click",(e)=>hideSidebar(e))
