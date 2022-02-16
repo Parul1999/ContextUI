@@ -1,7 +1,9 @@
 const componentList = document.querySelectorAll(".component-item");
 const introList = document.querySelectorAll(".getstarted");
 const content = document.querySelector(".doc-iframe");
-const openDocs = document.querySelector(".nav-doc-click")
+const openDocs = document.querySelector(".nav-doc-click");
+const hamburger = document.querySelector(".responsive-hamburger");
+const sidebar = document.querySelector(".doc-sidebar");
 const styleSelected = {
     "background-color": "var(--primary-color)",
     color: "white",
@@ -96,7 +98,12 @@ function copyToClipboard(element) {
 }
 
 //To expand and collapse the code-snipper
-function expandCollapse(element) {
+const expandCollapse=(element)=> {
   const code_ = document.querySelector(element);
   code_.classList.toggle("display-code-snippet");
 }
+
+const showHideSidebar=(e)=>{
+  sidebar.classList.toggle("display-sidebar")
+}
+hamburger.addEventListener("click",(e)=>showHideSidebar(e))
