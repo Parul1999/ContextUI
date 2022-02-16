@@ -3,7 +3,7 @@ const introList = document.querySelectorAll(".getstarted");
 const content = document.querySelector(".doc-iframe");
 const openDocs = document.querySelector(".nav-doc-click");
 const hamburger = document.querySelector(".responsive-hamburger");
-const sidebar = document.querySelector(".doc-sidebar");
+const sidebar = document.querySelector(".doc-sidebar-on-top");
 const styleSelected = {
     "background-color": "var(--primary-color)",
     color: "white",
@@ -104,6 +104,6 @@ const expandCollapse=(element)=> {
 }
 
 const showHideSidebar=(e)=>{
-  sidebar.classList.toggle("display-sidebar")
+  sidebar.classList.toggle("display-sidebar-on-top")
 }
 hamburger.addEventListener("click",(e)=>showHideSidebar(e))

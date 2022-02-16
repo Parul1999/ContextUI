@@ -141,75 +141,82 @@ body {
   text-decoration: none;
 }
 /* Color */
-.color-palette{
-display: flex;
+.color-palette {
+  display: flex;
 }
 
-.color-palette>*{
-    color: white;
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-between;
-    padding: 1rem;
-    margin-top: 1rem;
-    width: 200px;
+.color-palette > * {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 200px;
 }
 
-.primary{
-background-color: var(--primary-color);
+.primary {
+  background-color: var(--primary-color);
 }
-.secondary{
-    background-color: var(--secondary-color);
-    color:black
+.secondary {
+  background-color: var(--secondary-color);
+  color: black;
 }
 
-.warning{
-    background-color: var(--warning-color);
+.warning {
+  background-color: var(--warning-color);
 }
-.info{
-    background-color: var(--info-color);
+.info {
+  background-color: var(--info-color);
 }
-.success{
-    background-color: var(--success-color);
+.success {
+  background-color: var(--success-color);
 }
-.error{
-    background-color: var(--error-color);
+.error {
+  background-color: var(--error-color);
 }
-.responsive-hamburger{
-    align-self: center;
-    display: none;
-    font-size: 2.5rem;
+.responsive-hamburger {
+  align-self: center;
+  display: none;
+  font-size: 2.5rem;
 }
 @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
-@-webkit-keyframes fadeOut {
-    from { opacity: 1; }
-      to { opacity: 0; }
-}
-@keyframes fadeOut {
-    from { opacity: 1; }
-      to { opacity: 0; }
-}
-@media only screen and (max-width: 980px){
-    .desktop-nav-list,.doc-sidebar {
-    animation: fadeOut 1s;
-    display: none;
-    -webkit-animation: fadeOut 1s;
-    }
-    .responsive-hamburger{
-        display: block;
-    }
+  from {
+    opacity: 0;
   }
-  .display-sidebar{
+  to {
+    opacity: 1;
+  }
+}
+.doc-sidebar-on-top {
+    display: none;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 2;
+    background-color: white;
+  }
+@media only screen and (max-width: 980px) {
+  .desktop-nav-list,
+  .doc-sidebar {
+    display: none;
+  }
+  .responsive-hamburger {
+    display: block;
+  }
+  .display-sidebar-on-top {
     animation: fadeIn 1s;
     display: block;
     -webkit-animation: fadeIn 1s;
   }
 
+}

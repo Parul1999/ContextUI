@@ -29,6 +29,7 @@
 .doc-sidebar{
     grid-area: aside;
     overflow-y: scroll;
+    margin-bottom: 10%;
     width: max-content;
     height: 55rem;
 }
