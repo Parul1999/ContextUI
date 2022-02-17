@@ -20,6 +20,11 @@ body{
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
+@media only screen and (max-width: 1007px){
+  .doc-iframe {
+    height: calc(90vh - 35%);
+  }
+}
 .doc-nav{
     grid-area: header;
 }
@@ -30,7 +35,7 @@ body{
   flex-direction: row;
   padding-top: 5rem;
 }
-@media only screen and (max-width: 999px){
+@media only screen and (max-width: 1000px){
   .panel {
     align-items: center;
     display: flex;

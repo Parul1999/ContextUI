@@ -1,7 +1,7 @@
 const componentList = document.querySelectorAll(".component-item");
 const introList = document.querySelectorAll(".getstarted");
 const content = document.querySelector(".doc-iframe");
-// const openDocs = document.querySelector(".nav-doc-click");
+const openDocs = document.querySelector(".nav-doc-click");
 const hamburger = document.querySelector(".responsive-hamburger");
 const sidebar = document.querySelector(".doc-sidebar-on-top");
 const closeSidebar = document.querySelector(".close-sidebar")
