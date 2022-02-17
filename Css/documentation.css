@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Sora:wght@400&display=swap");
+@import url("reset.css");
+:root {
+  --primary-color: #134e4a;
+  --secondary-color: #f0fdfa;
+  --warning-color: #ec942f;
+  --info-color: #0284c7;
+  --success-color: #129c70;
+  --error-color: #e63636;
+  --light-grey: #adabab23;
+  --dark-grey: #0c0505a6;
+  --font-style: "Sora", sans-serif;
+}
+body {
+  font-family: var(--font-style);
+}
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-image: linear-gradient(
+    180deg,
+    var(--secondary-color) 0%,
+    var(--primary-color) 99%
+  );
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+#logo {
+  width: 10rem;
+}
+/* Main Styling */
+
+.content-container {
+  box-shadow: var(--dark-grey) 0px 0px 5px 0px, var(--dark-grey) 0px 0px 1px 0px;
+  height: max-content;
+  padding: 1rem;
+  min-width: max-content;
+  width: 53%;
+  margin: 2rem 0 0 1rem;
+}
+
+.doc-heading {
+  color: var(--primary-color);
+  font-size: 3rem;
+  padding: 1rem 0;
+}
+.doc-sub-heading {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.doc-txt {
+  color: var(--dark-grey);
+  font-size: 1.25rem;
+  word-spacing: 7px;
+}
+.doc-example-container {
+  display: flex;
+  justify-content: center;
+}
+.example-code {
+  border-radius: 5px;
+  display: block;
+  font-size: 1.3rem;
+  margin: 2rem 0 0 1rem;
+  width: 55%;
+}
+.example-code > pre {
+  margin: 0 0 -3rem 0;
+}
+
+.intro-code {
+  border-radius: 5px;
+  font-size: 1.3rem;
+  margin: 2rem 0 0 1rem;
+  width: 60%;
+}
+.intro-code > pre > code,
+.example-code > pre > code {
+  border-radius: 5px;
+}
+
+.intro-code > pre > code::-webkit-scrollbar,
+.example-code > pre > code::-webkit-scrollbar {
+  height: 10px;
+  width: 8px;
+}
+
+.intro-code > pre > code::-webkit-scrollbar-track,
+.example-code > pre > code::-webkit-scrollbar {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.intro-code > pre > code::-webkit-scrollbar-thumb,
+.example-code > pre > code::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-image: linear-gradient(
+    180deg,
+    var(--dark-grey) 0%,
+    var(--light-grey) 99%
+  );
+}
+
+.display-code-snippet {
+  display: block;
+}
+
+.txt-bg {
+  background-color: var(--light-grey);
+  border-radius: 5px;
+  padding: 2px;
+}
+.doc-txt > li {
+  margin: 1rem;
+}
+.icons-container {
+  display: flex;
+  gap: 8px;
+  margin: 1rem;
+}
+.icons-container > * {
+  color: var(--primary-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+/* Color */
+.color-palette {
+  display: flex;
+}
+
+.color-palette > * {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1rem;
+  width: 200px;
+}
+
+.primary {
+  background-color: var(--primary-color);
+}
+.secondary {
+  background-color: var(--secondary-color);
+  color: black;
+}
+
+.warning {
+  background-color: var(--warning-color);
+}
+.info {
+  background-color: var(--info-color);
+}
+.success {
+  background-color: var(--success-color);
+}
+.error {
+  background-color: var(--error-color);
+}
+.responsive-hamburger {
+  align-self: center;
+  display: none;
+  font-size: 2.5rem;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.doc-sidebar-on-top {
+    display: none;
+    height: 100%;
+    position: fixed;
+    overflow-y: scroll;
+    z-index: 2;
+    background-color: white;
+  }
+@media only screen and (max-width: 980px) {
+  .desktop-nav-list,
+  .doc-sidebar {
+    display: none;
+  }
+  .responsive-hamburger {
+    display: block;
+  }
+  .display-sidebar-on-top {
+    animation: fadeIn 1s;
+    display: block;
+    -webkit-animation: fadeIn 1s;
+  }
+
+}
+.close-sidebar{
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+
+
+

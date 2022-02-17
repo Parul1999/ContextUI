@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/Css/component.css" rel="stylesheet" />
-    <title>Alert</title>
-  </head>
-  <body>
-      <div class="alert-main-container">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="/Css/documentation.css" rel="stylesheet" />
+  <link href="/Css/component.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+    integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+    crossorigin="anonymous" />
+  <title>Alert</title>
+</head>
+
+<body>
+  <!-- Documentation Code -->
+  <h1 class="doc-heading">Alert</h1>
+  <p class="doc-txt">
+    Provide contextual feedback messages for typical user actions with the
+    handful of available and flexible alert messages.
+  </p>
+  <h2 class="doc-sub-heading">Examples</h2>
+  <p class="doc-txt">
+    The Alert component can have a heading , sub-heading and an icon too.<br />
+    To make an alert use class alert-container and alert-(varient).The varients are :
+  <ol class="doc-txt">
+    <li>info</li>
+    <li>error</li>
+    <li>warning</li>
+    <li>success</li>
+  </ol>
+  <p class="doc-txt">The icons used in the alert are from the google-icons as mentioned in the introduction.
+    The icons used in the alert i.e mentioned in the span can be changed as :</p>
+  <ol class="doc-txt">
+    <li>info : <span class="txt-bg"> info </span> </li>
+    <li>error : <span class="txt-bg">error </span></li>
+    <li>warning : <span class="txt-bg">warning_amber </span></li>
+    <li>success : <span class="txt-bg">task_alt</span></li>
+  </ol>
+  <p class="doc-txt"> You can choose icons of your choice as well and just replace the name in the span or replace the
+    span itself.</p>
+
+  </p>
+
+  <!-- Live Code -->
+  <div class="content-container alert-main-container">
+
+    <!-- Info-Alert -->
     <div class="alert-container alert-info">
       <div class="alert-heading">
         <span class="material-icons-outlined"> info </span>
@@ -19,6 +57,7 @@
       </div>
     </div>
 
+    <!-- Error-Alert -->
     <div class="alert-container alert-error">
       <div class="alert-heading">
         <span class="material-icons-outlined"> error </span>
@@ -29,6 +68,7 @@
       </div>
     </div>
 
+    <!-- Warning-Alert -->
     <div class="alert-container alert-warning">
       <div class="alert-heading">
         <span class="material-icons-outlined"> warning_amber </span>
@@ -39,6 +79,7 @@
       </div>
     </div>
 
+    <!-- Success-Alert -->
     <div class="alert-container alert-success">
       <div class="alert-heading">
         <span class="material-icons-outlined"> task_alt </span>
@@ -48,6 +89,38 @@
         <p>This is a success alert — check it out!</p>
       </div>
     </div>
-</div>
-  </body>
+  </div>
+
+  <!-- Code-Snipet -->
+  <div class="example-code" id="alert-example-code">
+    <pre>
+          <code class="html">
+      &lt;div class="alert-container alert-info"&gt;
+        &lt;div class="alert-heading"&gt;
+          &lt;span class="material-icons-outlined"&gt; info &lt;/span&gt;
+          &lt;h3&gt;Info&lt;/h3&gt;
+        &lt;/div&gt;
+        &lt;div class="alert-subheading"&gt;
+          &lt;p&gt;This is an info alert — check it out!&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    </code>
+  </pre>
+  </div>
+
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#alert-example-code"><span class="material-icons-outlined" onclick="expandCollapse('#alert-example-code')">
+        open_in_full </span></a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#alert-example-code')"> content_copy </span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/Docs/script.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+</body>
+
 </html>

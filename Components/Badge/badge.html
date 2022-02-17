@@ -1,45 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/Css/component.css" rel="stylesheet" />
-    <title>Badge</title>
-  </head>
-  <body>
-    <!-- Letter Badge -->
-    <div class="letter-badge-container">
-      <div class="letter-badge" title="Parul Kohli">
-        <span class="letter-badge-text">PK</span>
-        <span class="badge-online"></span>
-      </div>
-      <div class="letter-badge" title="Parul">
-        <span class="letter-badge-text">P</span>
-        <span class="badge-offline"></span>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+    integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+    crossorigin="anonymous" />
+  <link href="/Css/documentation.css" rel="stylesheet" />
+  <link href="/Css/component.css" rel="stylesheet" />
+  <title>Badge</title>
+</head>
+
+<body>
+  <!-- Documentation Code -->
+  <h1 class="doc-heading">Badge</h1>
+  <p class="doc-txt">
+    The Badge generates a small badge to the top-right of its child(ren).<br />
+    Example - To show a person is online/offline
+  </p>
+  <h2 class="doc-sub-heading">Examples</h2>
+  <p class="doc-txt">The Badge aplied on three types of Avatar :</p>
+
+  <ol class="doc-txt">
+    <li>Letter</li>
+    <li>Image</li>
+    <li>Icon</li>
+  </ol>
+  <p class="doc-txt">
+    You can choose any icon/image/letter of your choice and add a badge to it
+  </p>
+
+  <!-- Letter Badge -->
+  <h2 class="doc-sub-heading">• Badge on Letter Avatar</h2>
+  <p class="doc-txt">
+    Badge on letter avatar , can be used to represent the status(online/offline) of the person.
+    The status can be changed to offline or online.
+  <ol class="doc-txt">
+    <li>Online : <span class="txt-bg"> badge-online</span></li>
+    <li>Offline : <span class="txt-bg">badge-offline</span></li>
+  </ol>
+  </p>
+  <!-- Live Code -->
+  <div class="letter-badge-container content-container">
+    <div class="letter-badge" title="Parul Kohli">
+      <span class="letter-badge-text">PK</span>
+      <span class="badge-online"></span>
     </div>
-    <!-- Img Badge -->
-    <div class="img-badge-container">
-      <div class="img-badge">
-        <img src="/Assets/avatar-1.png" alt="badge" />
-        <span class="badge-online"></span>
-      </div>
-      <div class="img-badge">
-        <img src="/Assets/avatar-2.png" alt="badge" />
-        <span class="badge-offline"></span>
-      </div>
+    <div class="letter-badge" title="Parul">
+      <span class="letter-badge-text">P</span>
+      <span class="badge-offline"></span>
     </div>
-    <!-- Icon Badge -->
-    <div class="icon-badge-container">
-      <div class="icon-badge">
-        <span class="material-icons-outlined google-icon"> email </span>
-        <span class="badge-number">999+</span>
-      </div>
-      <div class="icon-badge">
-        <span class="material-icons-outlined google-icon"> shopping_cart </span>
-        <span class="badge-number">10</span>
-      </div>
+  </div>
+  <!-- Code-Snipet -->
+  <div class="example-code" id="letter-badge-example-code">
+    <pre>
+          <code class="html">
+   &lt;div class="letter-badge" title="Parul Kohli"&gt;
+      &lt;span class="letter-badge-text"&gt;PK&lt;/span&gt;
+       &lt;span class="badge-online"&gt;&lt;/span&gt;
+   &lt;/div&gt;
+      </code>
+  </pre>
+  </div>
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#letter-badge-example-code">
+      <span class="material-icons-outlined" onclick="expandCollapse('#letter-badge-example-code')">
+        open_in_full
+      </span>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#letter-badge-example-code')">
+      content_copy
+    </span>
+  </div>
+
+  <!-- Img Badge -->
+  <h2 class="doc-sub-heading">• Badge on Letter Avatar</h2>
+  <p class="doc-txt">
+    Badge on image avatar , can also be used to represent the status(online/offline) of the person.
+    The status can be changed to offline or online.
+  <ol class="doc-txt">
+    <li>Online : <span class="txt-bg"> badge-online</span></li>
+    <li>Offline : <span class="txt-bg">badge-offline</span></li>
+  </ol>
+  </p>
+  <!-- Live Code -->
+  <div class="img-badge-container content-container">
+    <div class="img-badge">
+      <img src="/Assets/avatar-1.png" alt="badge" />
+      <span class="badge-online"></span>
     </div>
-  </body>
+    <div class="img-badge">
+      <img src="/Assets/avatar-2.png" alt="badge" />
+      <span class="badge-offline"></span>
+    </div>
+  </div>
+  <!-- Code-Snipet -->
+  <div class="example-code" id="img-badge-example-code">
+    <pre>
+            <code class="html">
+    &lt;div class="img-badge"&gt;
+      &lt;img src="path-of-image" alt="badge" /&gt;
+      &lt;span class="badge-offline"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+        </code>
+    </pre>
+  </div>
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#img-badge-example-code">
+      <span class="material-icons-outlined" onclick="expandCollapse('#img-badge-example-code')">
+        open_in_full
+      </span>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#img-badge-example-code')">
+      content_copy
+    </span>
+  </div>
+
+
+  <!-- Icon Badge -->
+  <h2 class="doc-sub-heading">• Badge on Icons</h2>
+  <p class="doc-txt">
+    Badge on icons can be used at multiple places . <br />
+    Example - Number of mails , Number of items in cart
+  </p>
+  <!-- Live Code -->
+  <div class="icon-badge-container content-container">
+    <div class="icon-badge">
+      <span class="material-icons-outlined google-icon"> email </span>
+      <span class="badge-number">999+</span>
+    </div>
+    <div class="icon-badge">
+      <span class="material-icons-outlined google-icon"> shopping_cart </span>
+      <span class="badge-number">10</span>
+    </div>
+  </div>
+  <!-- Code-Snipet -->
+  <div class="example-code" id="icon-badge-example-code">
+    <pre>
+          <code class="html">
+  &lt;div class="icon-badge"&gt;
+    &lt;span class="material-icons-outlined google-icon"&gt; email &lt;/span&gt;
+    &lt;span class="badge-number"&gt;999+&lt;/span&gt;
+  &lt;/div&gt;
+      </code>
+  </pre>
+  </div>
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#icon-badge-example-code">
+      <span class="material-icons-outlined" onclick="expandCollapse('#icon-badge-example-code')">
+        open_in_full
+      </span>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#icon-badge-example-code')">
+      content_copy
+    </span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/Docs/script.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+  <script>
+    hljs.highlightAll();
+  </script>
+</body>
+
 </html>

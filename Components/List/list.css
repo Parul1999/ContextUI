@@ -1,12 +1,7 @@
 .list-wrap{
     width: 80%;
 }
-.simple-list-wrap{
-    border: 1px solid;
-    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
-    padding: 10px;
-    width: 15%;
-}
+
 .list-item{
     align-items: center;
     border-bottom: 2px solid var(--secondary-color);

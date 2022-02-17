@@ -1,17 +1,13 @@
 .navbar{
-    background: linear-gradient(
-        to top,
-        var(--primary-color) 0%,
-        var(--secondary-color) 20%
-      );
-      box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  box-shadow:var(--primary-color) 0px 1px 2px 0px;
       color: var(--primary-color);
       display: flex;
-      padding: 1.5rem;
+      padding: 10px;
+      z-index: 1;
 }
 .desktop-nav {
   justify-content: space-between;
-  position:sticky;
+  font-size: 1.3rem;
 }
 .desktop-nav-list {
   align-items: center;
@@ -19,6 +15,12 @@
   justify-content: space-between;
   list-style: none;
 }
+@media only screen and (max-width: 485px){
+  .desktop-nav-list {
+    flex-direction: column;
+  }
+}
+
 .desktop-list-item {
   margin-right: 2rem;
   color: var(--primary-color);
