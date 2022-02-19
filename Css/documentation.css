@@ -112,7 +112,7 @@ body {
 }
 
 .display-code-snippet {
-  display: block;
+  display: none;
 }
 
 .txt-bg {
@@ -198,7 +198,7 @@ body {
     z-index: 2;
     background-color: white;
   }
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 1000px) {
   .desktop-nav-list,
   .doc-sidebar {
     display: none;
