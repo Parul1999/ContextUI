@@ -13,13 +13,13 @@
 .card-img {
   width: 100%;
 }
-.footer {
+.card-footer {
   align-items: center;
   display: flex;
   gap: 2rem;
   margin-bottom: 9.6px;
 }
-.footer-only-icons {
+.card-footer-only-icons {
   justify-content: flex-end;
 }
 
