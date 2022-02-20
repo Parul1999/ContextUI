@@ -52,7 +52,11 @@ body {
   width: 53%;
   margin: 2rem 0 0 1rem;
 }
-
+@media (max-width: 980px) {
+  .content-container {
+    flex-direction:column;
+  }
+}
 .doc-heading {
   color: var(--primary-color);
   font-size: 3rem;

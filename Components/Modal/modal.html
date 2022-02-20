@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Css/component.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+        integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
+        crossorigin="anonymous" />
+    <link href="/Css/documentation.css" rel="stylesheet" />
+    <link href="./modal.css" rel="stylesheet" />
+    <title>Modal</title>
+</head>
+
+<body>
+    <div class="content-container">
+        <button class="modal-btn modal-baseline" onclick="openModal('modal')">modal 1</button>
+
+        <div class="modal content-container">
+            <span class="material-icons-outlined modal-close" onclick="onClose()">
+                close
+            </span>
+            <span class="modal-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, </span>
+            <div class="modal-footer">
+                <!-- <button class="modal-click-btn">RETRY</button> -->
+
+            </div>
+
+        </div>
+    </div>
+
+   
+    <div class="content-container">
+        <button class="modal-btn modal-baseline" onclick="openModal('type2')">modal 1</button>
+
+        <div class="modal type2 content-container">
+            <span class="material-icons-outlined modal-close" onclick="onClose()">
+                close
+            </span>
+            <h1>hello</h1>
+            <span class="modal-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                Ipsum has been the industry's standard dummy text ever since the 1500s, </span>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="onClose()">ok</button>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
