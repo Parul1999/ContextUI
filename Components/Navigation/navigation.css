@@ -1,9 +1,18 @@
-.navbar{
-  box-shadow:var(--primary-color) 0px 1px 2px 0px;
-      color: var(--primary-color);
-      display: flex;
-      padding: 10px;
-      z-index: 1;
+.navbar {
+  box-shadow: var(--primary-color) 0px 1px 2px 0px;
+  color: var(--primary-color);
+  display: flex;
+  padding: 10px;
+
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+.demo-nav {
+  box-shadow: var(--primary-color) 0px 1px 2px 0px;
+  color: var(--primary-color);
+  display: flex;
+  padding: 10px;
 }
 .desktop-nav {
   justify-content: space-between;
@@ -15,7 +24,7 @@
   justify-content: space-between;
   list-style: none;
 }
-@media only screen and (max-width: 485px){
+@media only screen and (max-width: 485px) {
   .desktop-nav-list {
     flex-direction: column;
   }
