@@ -35,6 +35,13 @@ body {
 #logo {
   width: 10rem;
 }
+.demo-nav {
+  box-shadow: var(--primary-color) 0px 1px 2px 0px;
+  color: var(--primary-color);
+  display: flex;
+  padding: 10px;
+}
+
 /* Main Styling */
 
 .content-container {
