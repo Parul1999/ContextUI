@@ -1,4 +1,4 @@
-/* .navbar {
+.navbar {
   box-shadow: var(--primary-color) 0px 1px 2px 0px;
   color: var(--primary-color);
   display: flex;
@@ -8,19 +8,6 @@
   width: 100%;
   background-color: white;
 
-}
-.demo-nav {
-  box-shadow: var(--primary-color) 0px 1px 2px 0px;
-  color: var(--primary-color);
-  display: flex;
-  padding: 10px;
-} */
-.navbar{
-box-shadow:var(--primary-color) 0px 1px 2px 0px;
-      color: var(--primary-color);
-      display: flex;
-      padding: 10px;
-      z-index: 1;
 }
 
 .desktop-nav {
