@@ -21,11 +21,9 @@
     border-radius: 5px;
     color: black;
     display: none;
-  
+    flex-direction: column;
+    padding: 2rem;
     position: absolute;
-    
-
-  
 }
 .modal-click-buttton
 {
