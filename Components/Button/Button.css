@@ -1,118 +1,118 @@
-.btn-container{
-    display: flex;
-    gap:2rem;
-    margin:1rem;
+.btn-container {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem;
 }
 /* Basic Button CSS */
-.btn{
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    font-family: var(--font-style);
-    font-size: 1.2rem;
-    padding: 0.5rem 1.5rem ;
+.btn {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  font-family: var(--font-style);
+  font-size: 1.2rem;
+  padding: 0.5rem 1.5rem;
 }
-.btn-primary{
-    background-color: var(--primary-color);
-    color: white;
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--light-color);
 }
-.btn-secondary{
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
-.btn-link>a{
-    color:black;
-    text-decoration: none;
+.btn-link > a {
+  color: var(--dark-color);
+  text-decoration: none;
 }
-.btn-link>span{
-    vertical-align: bottom;
+.btn-link > span {
+  vertical-align: bottom;
 }
 /* Outline Button CSS */
-.btn-out-danger{
-    background-color: transparent;
-    border: 1px solid var(--error-color);
-    color: var(--error-color);
+.btn-out-danger {
+  background-color: transparent;
+  border: 1px solid var(--error-color);
+  color: var(--error-color);
 }
-.btn-out-success{
-    background-color: transparent;
-    border: 1px solid var(--success-color);
-    color: var(--success-color);
+.btn-out-success {
+  background-color: transparent;
+  border: 1px solid var(--success-color);
+  color: var(--success-color);
 }
-.btn-out-info{
-    background-color: transparent;
-    border: 1px solid var(--info-color);
-    color: var(--info-color);
+.btn-out-info {
+  background-color: transparent;
+  border: 1px solid var(--info-color);
+  color: var(--info-color);
 }
-.btn-out-warning{
-    background-color: transparent;
-    border: 1px solid var(--warning-color);
-    color: var(--warning-color);
+.btn-out-warning {
+  background-color: transparent;
+  border: 1px solid var(--warning-color);
+  color: var(--warning-color);
 }
 /* Solid Button CSS */
-.btn-sol-danger{
-    background-color:var(--error-color);
-    color: white;
+.btn-sol-danger {
+  background-color: var(--error-color);
+  color: var(--light-color);
 }
-.btn-sol-success{
-    background-color: var(--success-color);
-    color: white;
+.btn-sol-success {
+  background-color: var(--success-color);
+  color: var(--light-color);
 }
-.btn-sol-info{
-    background-color:var(--info-color);
-    color:white;
+.btn-sol-info {
+  background-color: var(--info-color);
+  color: var(--light-color);
 }
-.btn-sol-warning{
-    background-color:var(--warning-color);
-    color:white;
+.btn-sol-warning {
+  background-color: var(--warning-color);
+  color: var(--light-color);
 }
 /* Disabled Buttons */
-.btn-disabled{
-    background-color: var(--disabled-bg-color);
-    color:var(--disabled-color);
-    cursor:not-allowed;
+.btn-disabled {
+  background-color: var(--disabled-bg-color);
+  color: var(--disabled-color);
+  cursor: not-allowed;
 }
 /* Text Buttons */
-.btn-txt-danger{
-color: var(--error-color);
-background-color: transparent;
+.btn-txt-danger {
+  color: var(--error-color);
+  background-color: transparent;
 }
-.btn-txt-primary{
-    color: var(--primary-color);
-    background-color: transparent;
+.btn-txt-primary {
+  color: var(--primary-color);
+  background-color: transparent;
 }
-.btn-txt-info{
-    color: var(--info-color);
-    background-color: transparent;
+.btn-txt-info {
+  color: var(--info-color);
+  background-color: transparent;
 }
-.btn-txt-warning{
-    color: var(--warning-color);
-    background-color: transparent;
+.btn-txt-warning {
+  color: var(--warning-color);
+  background-color: transparent;
 }
 /* Button with Icons */
-.btn-icon>span{
-   margin-right: 4px;
+.btn-icon > span {
+  margin-right: 4px;
 }
-.btn-icon{
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+.btn-icon {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
-.btn-del{
-    background-color: var(--error-bg-color);
-    color:var(--error-color);
+.btn-del {
+  background-color: var(--error-bg-color);
+  color: var(--error-color);
 }
 /* Float Action Button */
-.fab-container{
-    border: 1px solid black;
-    height: 10rem;
-    position: relative;
-    width: 25rem;
-    box-shadow: 10px 5px 5px grey;
+.fab-container {
+  border: 1px solid var(--dark-color);
+  height: 10rem;
+  position: relative;
+  width: 25rem;
+  box-shadow: 10px 5px 5px grey;
 }
 
-.fab-icon{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 1rem;
+.fab-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
 }

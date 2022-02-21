@@ -1,25 +1,28 @@
 /*Container*/
-.icon-avatar-container,.img-avatar-container,.letter-avatar-container{
-    display:flex;
-    gap: 1rem;
+.icon-avatar-container,
+.img-avatar-container,
+.letter-avatar-container {
+  display: flex;
+  gap: 1rem;
 }
 /* Letter Avatar */
-.letter-avatar,.icon-avatar{
-    align-items: center;
-    background-color: var(--secondary-color);
-    border-radius: 50%;
-    display: flex;
-    height: 50px;
-    justify-content: center;
-    width: 50px;
+.letter-avatar,
+.icon-avatar {
+  align-items: center;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 50px;
 }
 
 /*Image Avatar*/
-.img-avatar{
-    display: inline-block;
+.img-avatar {
+  display: inline-block;
 }
-.img-avatar>img{
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
+.img-avatar > img {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }

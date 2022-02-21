@@ -10,29 +10,26 @@
 
 .sidebar > li {
   border-radius: 5px;
-cursor: pointer;
-font-size: 1.2rem;
-padding: 1rem;;
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 1rem;
 }
-.sidebar>h1{
+.sidebar > h1 {
   margin: 1rem 0;
 }
-.sidebar > li:hover{
-  color:var(--primary-color);
+.sidebar > li:hover {
+  color: var(--primary-color);
   font-size: 1.3rem;
 }
-.sidebar-item-selected{
+.sidebar-item-selected {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--light-color);
 }
-.doc-sidebar{
-  /* grid-area: aside; */
-  overflow-y: scroll;
+.doc-sidebar {
+  grid-area: aside;
+  overflow-y: auto;
   overflow-x: hidden;
-  margin-bottom: 10%;
   width: 16rem;
-  height: calc(110vh - 9%);
-
 }
 .doc-sidebar::-webkit-scrollbar {
   width: 8px;
@@ -45,6 +42,10 @@ padding: 1rem;;
 
 .doc-sidebar::-webkit-scrollbar-thumb {
   border-radius: 100px;
-  background-image: linear-gradient(180deg, var(--secondary-color) 0%, var(--primary-color) 99%);
+  background-image: linear-gradient(
+    180deg,
+    var(--secondary-color) 0%,
+    var(--primary-color) 99%
+  );
   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
 }

@@ -21,7 +21,7 @@
 .full-star-active {
   background-color: var(--gold-color);
 }
-.rating{
-    font-size: 1.2rem;
-    padding: 1rem 0 0 1rem;
+.rating {
+  font-size: 1.2rem;
+  padding: 1rem 0 0 1rem;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html color-mode="light" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,10 +16,29 @@
 </head>
 
 <body>
+    <div id="show"></div>
+
+    <!-- Documentation Code -->
+    <h1 class="doc-heading">Modal</h1>
+    <p class="doc-txt">
+        modal act as popup/toast/confirmation when clicked on any
+    </p>
+
+    <!-- modal -->
+    <h2 class="doc-sub-heading">Examples</h2>
+
+    <ol class="doc-txt">
+        <li>Base : <span class="txt-bg">modal-baseline</span></li>
+
+    </ol>
+    <p class="doc-txt">
+        These classes can be added along with <span class="txt-bg">modal-btn</span> to create the button.
+    </p>
+    </p>
     <div class="content-container">
         <button class="modal-btn modal-baseline" onclick="openModal('modal')">modal 1</button>
 
-        <div class="modal content-container">
+        <div class="modal">
             <span class="material-icons-outlined modal-close" onclick="onClose()">
                 close
             </span>
@@ -33,11 +52,26 @@
         </div>
     </div>
 
-   
+    <!-- Code-Snipet -->
+    <div class="example-code" id="modal-example-code">
+        <pre>
+          <code class="html">
+      &lt;span class="material-icons-outlined modal-close"&gt;
+      close
+      &lt;/span&gt;
+      &lt;span class="modal-text"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+      Ipsum has been the industry's standard dummy text ever since the 1500s, &lt;/span&gt;
+      &lt;div class="modal-footer"&gt;
+      &lt;button class="modal-click-btn"&gt;RETRY&lt;/button&gt;
+      </code>
+  </pre>
+    </div>
+
+
     <div class="content-container">
         <button class="modal-btn modal-baseline" onclick="openModal('type2')">modal 1</button>
 
-        <div class="modal type2 content-container">
+        <div class="modal type2 ">
             <span class="material-icons-outlined modal-close" onclick="onClose()">
                 close
             </span>
@@ -46,12 +80,48 @@
                 Ipsum has been the industry's standard dummy text ever since the 1500s, </span>
             <div class="modal-footer">
                 <button class="btn btn-primary" onclick="onClose()">ok</button>
-
-
             </div>
 
         </div>
     </div>
+
+    <!-- Code-Snipet -->
+    <div class="example-code" id="modal-example-code">
+        <pre>
+          <code class="html">
+    &lt;div class="modal type2"&gt;
+        &lt;span class="material-icons-outlined modal-close" onclick="onClose()"&gt;
+            close
+        &lt;/span&gt;
+        &lt;h1&gt;hello&lt;/h1&gt;
+        &lt;span class="modal-text"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s, &lt;/span&gt;
+        &lt;div class="modal-footer"&gt;
+            &lt;button class="btn btn-primary" onclick="onClose()"&gt;ok&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+      </code>
+  </pre>
+    </div>
+    <!-- Icons to Copy and Expand Code -->
+    <div class="icons-container">
+        <a href="#modal-example-code">
+            <span class="material-icons-outlined" onclick="expandCollapse('#modal-example-code')">
+                open_in_full
+            </span>
+        </a>
+        <span class="material-icons-outlined" onclick="copyToClipboard('#modal-badge-example-code')">
+            content_copy
+        </span>
+    </div>
+    <script src="modal.js"></script>
+
+    <!-- Scripts -->
+    <script src="/Docs/script.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
 
 </body>
 
