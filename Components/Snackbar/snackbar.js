@@ -4,29 +4,26 @@ const baseline = document.querySelector(".snackbar-baseline");
 const leading = document.querySelector(".snackbar-leading");
 const stacked = document.querySelector(".snackbar-stacked");
 
-const baselineClick=()=>
-{
+const baselineClick = () => {
     snackbar.style.cssText = `
     display: flex; 
     margin-left:50%;
     transform:translateX(-50%);
     `;
 
-    setTimeout(()=>{
+    setTimeout(() => {
         closeClick()
-    },[5000])
+    }, [5000])
 }
-const leadingClick=()=>
-{
+const leadingClick = () => {
     snackbar.style.cssText = `
     display: flex; 
     `;
-    setTimeout(()=>{
+    setTimeout(() => {
         closeClick()
-    },[5000])
+    }, [5000])
 }
-const stackedClick=()=>
-{
+const stackedClick = () => {
     snackbar.style.cssText = `
     display: flex; 
     flex-direction:column;
@@ -34,16 +31,15 @@ const stackedClick=()=>
     transform:translateX(-50%);
     align-items:end;
     `;
-    setTimeout(()=>{
+    setTimeout(() => {
         closeClick()
-    },[5000])
+    }, [5000])
 }
-const closeClick=()=>
-{
-snackbar.style.display ="none"
+const closeClick = () => {
+    snackbar.style.display = "none"
 }
 
-baseline.addEventListener("click",baselineClick)
-leading.addEventListener("click",leadingClick)
-stacked.addEventListener("click",stackedClick)
-snackbarClose.addEventListener("click",closeClick)
+baseline.addEventListener("click", baselineClick)
+leading.addEventListener("click", leadingClick)
+stacked.addEventListener("click", stackedClick)
+snackbarClose.addEventListener("click", closeClick)

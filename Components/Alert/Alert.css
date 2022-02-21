@@ -1,38 +1,38 @@
-.alert-main-container{
-    width:50%;
+.alert-main-container {
+  width: 50%;
 }
 
-.alert-heading{
-    display: flex;
-    gap: 10px;
+.alert-heading {
+  display: flex;
+  gap: 10px;
 }
 
-.alert-container{
-    border-radius: 5px;
-    font-family: var(--font-style);
-    padding: 9px;
-    margin: 1rem;
+.alert-container {
+  border-radius: 5px;
+  font-family: var(--font-style);
+  padding: 9px;
+  margin: 1rem;
 }
-.alert-success{
-    color:var(--success-color);
-    background-color: var(--success-bg-color)
+.alert-success {
+  color: var(--success-color);
+  background-color: var(--success-bg-color);
 }
-.alert-info{
-    color:var(--info-color);
-    background-color: var(--info-bg-color)
+.alert-info {
+  color: var(--info-color);
+  background-color: var(--info-bg-color);
 }
-.alert-warning{
-    color:var(--warning-color);
-    background-color: var(--warning-bg-color)
+.alert-warning {
+  color: var(--warning-color);
+  background-color: var(--warning-bg-color);
 }
-.alert-error{
-    color:var(--error-color);
-    background-color: var(--error-bg-color)
+.alert-error {
+  color: var(--error-color);
+  background-color: var(--error-bg-color);
 }
-.alert-subheading{
-    display: flex;
-    flex-wrap: wrap;
+.alert-subheading {
+  display: flex;
+  flex-wrap: wrap;
 }
-.alert-subheading>p{
-    padding: 0.5rem 2rem;
+.alert-subheading > p {
+  padding: 0.5rem 2rem;
 }

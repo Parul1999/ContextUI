@@ -1,102 +1,70 @@
 /* CSS For Landing Page */
-body{
-  overflow: hidden;
+body {
+  overflow-x: hidden;
 }
-.doc-container{
-  display: flex;
-  flex-direction: row;
-  padding-top: 5rem;
-  
-}
-  
-.grid-container {
-  display: grid;
-  overflow: hidden;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  gap: 10px;
 
-}
-.doc-navbar-wrap { grid-area: header;}
-.sidebar-wrap { grid-area: menu;}
-.iframe-wrap { grid-area: main;}
-
-.doc-iframe {
-width: 100%;
-padding: 5rem 1rem ;
-height: calc(90vh - 20%);
-border: none;
-
-}
-@media only screen and (max-width: 1007px){
-.doc-iframe {
-  height: calc(90vh - 35%);
-  overflow-x: scroll;
-  height: 50rem;
-  width: 100%;
-}
-}
-.doc-nav{
-
-  grid-area: header;
- 
-}
 /* Panel Styling */
 .panel {
-align-items: center;
-display: flex;
-flex-direction: row;
-padding-top: 5rem;
-}
-@media only screen and (max-width: 1000px){
-.panel {
   align-items: center;
+  background: var(--light-color);
   display: flex;
-  flex-direction: column;
-  margin-top: 3rem;
-  text-align: center;
+  flex-direction: row;
+  height: 100vh;
+  padding-bottom: 1rem;
 }
+@media only screen and (max-width: 1000px) {
+  .panel {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-align: center;
+  }
 }
 .hero-img-wrapper {
-width: auto;
+  width: auto;
 }
 .hero-img {
-width: auto;
-height: 100%;
-max-height: 100%;
-max-width: 100%;
+  width: auto;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  filter: var(--hero-img-filter);
 }
 .panel-heading {
-color: var(--primary-color);
-font-size: 3rem;
+  color: var(--primary-color);
+  font-size: 3rem;
 }
 .panel-sub-heading {
-font-size: 2rem;
+  color: var(--dark-color);
+  font-size: 2rem;
 }
 .panel-btn {
-border-radius: 5px;
-font-size: 1.2rem;
-padding: 1rem;
-margin-top: 3rem;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin-top: 3rem;
 }
 .get-started-btn {
-background-color: var(--primary-color);
-border: none;
-color: white;
-margin-right: 1rem;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--light-color);
+  margin-right: 1rem;
 }
 .get-started-btn > a {
-text-decoration: none;
-color: white;
+  text-decoration: none;
+  color: var(--light-color);
 }
 .github-btn {
-border: 2px solid var(--primary-color);
-color: var(--primary-color);
+  background: var(--light-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
 }
 .github-btn > a {
-text-decoration: none;
-color: var(--primary-color);
-font-weight: bolder;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bolder;
+}
+.color-mode-btn{
+  cursor: pointer;
 }

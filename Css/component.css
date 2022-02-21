@@ -15,8 +15,6 @@
 @import url("../Components/TextUtilities/textutilities.css");
 
 :root {
-  --primary-color: #134e4a;
-  --secondary-color: #f0fdfa;
   --font-style: "Sora", sans-serif;
   /* Badges */
   --online-color: #22c55e;
@@ -30,14 +28,46 @@
   --success-bg-color: #d7faea;
   --error-color: #e63636;
   --error-bg-color: #fadcdc;
-
   --disabled-color: #64748b;
   --disabled-bg-color: #dae2ec;
   --dark-grey-color: #a3a2a2;
   --grey-color: #d3d3d3d3;
-
   --gold-color: #ffd900e1;
 }
+
+:root[color-mode="light"] {
+  --primary-color: #134e4a;
+  --secondary-color: #f0fdfa;
+  --light-color: white;
+  --dark-color: rgb(41, 41, 41);
+  --hero-img-filter: none;
+  --logo-filter: none;
+  --light-grey: #adabab23;
+  --dark-grey: #0c0505a6;
+}
+:root[color-mode="dark"] {
+  --primary-color: #f0fdfa;
+  --secondary-color: #2e6864;
+  --light-color: rgb(41, 41, 41);
+  --dark-color: white;
+  --hero-img-filter: invert(84.2%) sepia(0%) saturate(89%) hue-rotate(143deg)
+    brightness(104%) contrast(101%);
+  --logo-filter: invert(84.2%) sepia(0%) saturate(67%) hue-rotate(199deg)
+    brightness(103%) contrast(101%);
+  --light-grey: #0c0505a6;
+  --dark-grey: #f1f1f14d;
+}
+
+/* Any element with the class "light-hidden" will be hidden when the site is set to Light Mode */
+:root[color-mode="light"] .light-hidden {
+  display: none;
+}
+
+/* Any element with the class "dark-hidden" will be hidden when the site is set to Dark Mode */
+:root[color-mode="dark"] .dark-hidden {
+  display: none;
+}
+
 button {
   cursor: pointer;
 }

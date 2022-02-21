@@ -1,41 +1,39 @@
-.modal-close{
-    cursor: pointer;
-    align-self: flex-end;
+.modal-close {
+  cursor: pointer;
+  align-self: flex-end;
 }
 
-.modal-btn
-{
-    background: var(--primary-color);
-    border:none;
-    border-radius: 5px;
-    color: white;
-    font-size: 1.1rem;
-    padding: 10px;   
-    margin-right: 10px;
+.modal-btn {
+  background: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  color: var(--light-color);
+  font-size: 1.1rem;
+  padding: 10px;
+  margin-right: 10px;
 }
 
-.modal
-{
-    align-items: center;
-    background: white;
-    border-radius: 5px;
-    color: black;
-    display: none;
-    flex-direction: column;
-    padding: 2rem;
-    position: absolute;
+.modal {
+  align-items: center;
+  background: var(--light-color);
+  border-radius: 5px;
+  color: var(--dark-color);
+  display: none;
+  flex-direction: column;
+  padding: 2rem;
+  position: absolute;
 }
-.modal-click-buttton
-{
-    border:none;
-    background:none;
-    color:white;
-    font-weight: bolder;
+.modal-click-buttton {
+  border: none;
+  background: none;
+  color: var(--light-color);
+  font-weight: bolder;
 }
 
-.modal-footer{
-    display: flex;
+.modal-footer {
+  display: flex;
 }
-.modal-text{
-    width: 20rem;
+.modal-text {
+  width: 20rem;
 }
+

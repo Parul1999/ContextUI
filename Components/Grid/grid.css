@@ -1,34 +1,131 @@
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    "header header header header header header"
-    "menu main main main right right"
-    "menu footer footer footer footer footer";
-  gap: 10px;
-  background-color: #2196f3;
-  padding: 10px;
+body {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+.container > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 24px;
 }
-.item1 {
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-gap: 20px;
+
+  grid-template-columns: 200px 1fr;
+
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "aside main"
+    "aside main"
+    "footer footer";
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "aside"
+      "main"
+      "footer";
+  }
+}
+
+
+
+.container-1 > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 24px;
+}
+
+.container-1 {
+  display: grid;
+  height: 100vh;
+  grid-gap: 20px;
+
+  grid-template-columns: 200px 1fr;
+
+  grid-template-areas:
+    "header header"
+    "main main"
+    "main main"
+    "main main"
+    ;
+}
+
+@media only screen and (max-width: 500px) {
+  .container-1 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+     
+      "main"
+     ;
+  }
+}
+
+.container-2 > * {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 24px;
+}
+
+.container-2 {
+  display: grid;
+  height: 100vh;
+  grid-gap: 20px;
+
+  grid-template-columns: 200px 1fr;
+
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "aside main"
+    "aside main"
+    ;
+}
+
+@media only screen and (max-width: 500px) {
+  .container-2 {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+     "aside"
+      "main"
+     ;
+  }
+}
+
+
+.header {
+  background-color: var(--offline-color);
   grid-area: header;
 }
-.item2 {
-  grid-area: menu;
-}
-.item3 {
-  grid-area: main;
-  width: 100%;
-}
-.item4 {
-  grid-area: right;
-}
-.item5 {
-  grid-area: footer;
+
+.aside {
+  background-color: var(--online-color);
+  grid-area: aside;
 }
 
+.main {
+  background-color: var(--gold-color);
+  grid-area: main;
+}
+
+.footer {
+  background-color: var(--warning-bg-color);
+  grid-area: footer;
+}

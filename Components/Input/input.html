@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html color-mode="light" lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -14,25 +14,26 @@
 </head>
 
 <body>
+  <div id="show"></div>
 
-    <!-- Documentation Code -->
-    <h1 class="doc-heading">Input</h1>
-    <p class="doc-txt">
-     Input is used to take data from the user.
-    </p>
-    <h2 class="doc-sub-heading">Examples :</h2>
-  
+  <!-- Documentation Code -->
+  <h1 class="doc-heading">Input</h1>
+  <p class="doc-txt">
+    Input is used to take data from the user.
+  </p>
+  <h2 class="doc-sub-heading">Examples :</h2>
+
   <!-- Text Input Box -->
   <h2 class="doc-sub-heading">• Input</h2>
   <p class="doc-txt">There are different types of input , a few as mentioned below .
     To apply the styling to any of those input following are the things to do:
-    <ol class="doc-txt">
-      <li>Put label after the input tag </li>
-      <li>Enclose the label and input tag in a div with a class of <span class="txt-bg">field</span></li>
-    </ol>
+  <ol class="doc-txt">
+    <li>Put label after the input tag </li>
+    <li>Enclose the label and input tag in a div with a class of <span class="txt-bg">field</span></li>
+  </ol>
   </p>
   <div class="content-container">
-  <form action="">
+    <form action="">
       <div class="field ">
         <input class="input" type="text" name="fullname" id="fullname" placeholder="Parul Kohli" autocomplete="off" />
         <label class="label" for="fullname">Name</label>
@@ -45,11 +46,15 @@
         <input class="input" type="password" name="password" id="password" placeholder="*" autocomplete="off" />
         <label class="label" for="password">Password</label>
       </div>
-  </form>
-</div>
-    <!-- Code-Snipet -->
-    <div class="example-code" id="inp-example-code">
-      <pre>
+      <div class="field">
+        <input class="input" type="textarea" name="password" id="password" placeholder="*" autocomplete="off" />
+        <label class="label" for="password">Password</label>
+      </div>
+    </form>
+  </div>
+  <!-- Code-Snipet -->
+  <div class="example-code" id="inp-example-code">
+    <pre>
           <code class="html">
  &lt;div class="field"&gt;
    &lt;input class="input" type="password" name="password" id="password" placeholder="*" autocomplete="off" /&gt;
@@ -57,24 +62,24 @@
  &lt;/div&gt;
       </code>
   </pre>
-    </div>
-    <!-- Icons to Copy and Expand Code -->
-    <div class="icons-container">
-      <a href="#inp-example-code">
-        <span class="material-icons-outlined" onclick="expandCollapse('#inp-example-code')">
-          open_in_full
-        </span>
-      </a>
-      <span class="material-icons-outlined" onclick="copyToClipboard('#inp-example-code')">
-        content_copy
+  </div>
+  <!-- Icons to Copy and Expand Code -->
+  <div class="icons-container">
+    <a href="#inp-example-code">
+      <span class="material-icons-outlined" onclick="expandCollapse('#inp-example-code')">
+        open_in_full
       </span>
-    </div>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#inp-example-code')">
+      content_copy
+    </span>
+  </div>
 
 
   <!-- Valid and Invalid Text Boxes -->
   <h2 class="doc-sub-heading">• Input with validations</h2>
   <p class="doc-txt">Input can be a valid or invalid input as per the conditions
-    If an input is valid add class <span class="txt-bg">valid-input</span> to input tag 
+    If an input is valid add class <span class="txt-bg">valid-input</span> to input tag
     and <span class="txt-bg">valid-label</span> to the label tag.
     Similarly <span class="txt-bg">invalid-input</span> and <span class="txt-bg">invalid-label</span>
     to the invalid input
@@ -119,7 +124,7 @@
         content_copy
       </span>
     </div>
-    
+
     <!-- Scripts -->
     <script src="/Docs/script.js" type="text/javascript"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>

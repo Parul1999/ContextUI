@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html color-mode="light" lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -11,41 +11,141 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/atom-one-dark.min.css"
     integrity="sha512-Fcqyubi5qOvl+yCwSJ+r7lli+CO1eHXMaugsZrnxuU4DVpLYWXTVoHy55+mCb4VZpMgy7PBhV7IiymC0yu9tkQ=="
     crossorigin="anonymous" />
-  <title>Alert</title>
+  <title>Grid</title>
 </head>
+
+<body>
+  <div id="show"></div>
+  <!-- Documentation Code -->
+  <h1 class="doc-heading">Grid</h1>
+  <p class="doc-txt">
+    The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.
+  </p>
+  </head>
+
   <body>
 
-    <!-- Live Code -->
-    <div class="content-container grid-main-container">
-      <div class="grid-container">
-        <div class="item1">Header</div>
+    <h1 class="doc-sub-heading">Grid Layout</h1>
 
-        <div class="item3">Main</div>
+    <p class="doc-txt">This grid layout contains 4 columns and three rows:</p>
+
+
+    <!-- Live Code -->
+    <div class="content-container">
+      <div class="container">
+        <header class="header" >Header</header>
+        <aside class="aside">Side bar</aside>
+        <main class="main">Content</main>
+        <footer class="footer">Footer</footer>
+      </div>
+    </div>
+
+
+    <!-- Code-Snipet -->
+    <div class="example-code" id="grid-example-code">
+      <pre>
+        <code class="html">
+          &lt;div class="container"&gt;
+            &lt;header&gt;Header&lt;/header&gt;
+            &lt;aside&gt;Side bar&lt;/aside&gt;
+            &lt;main&gt;Content&lt;/main&gt;
+            &lt;footer&gt;Footer&lt;/footer&gt;
+          &lt;/div&gt;
+  </code>
+</pre>
+    </div>
+
+
+
+    <!-- Icons to Copy and Expand Code -->
+    <div class="icons-container">
+      <a href="#grid-example-code"><span class="material-icons-outlined" onclick="expandCollapse('#grid-example-code')">
+          open_in_full </span></a>
+      <span class="material-icons-outlined" onclick="copyToClipboard('#grid-example-code')"> content_copy </span>
+    </div>
+
+
+    <p class="doc-txt">This grid layout contains 1 columns and 2 rows:</p>
+
+
+    <!-- Live Code -->
+    <div class="content-container">
+      <div class="container-1">
+        <header class="header" >Header</header>
+
+        <main class="main">Content</main>
 
       </div>
     </div>
 
+
+    <!-- Code-Snipet -->
+    <div class="example-code" id="grid-example-code">
+      <pre>
+        <code class="html">
+          &lt;div class="container-1"&gt;
+            &lt;header&gt;Header&lt;/header&gt;
+         
+            &lt;main&gt;Content&lt;/main&gt;
+    
+          &lt;/div&gt;
+  </code>
+</pre>
+    </div>
+
+
+
+    <!-- Icons to Copy and Expand Code -->
+    <div class="icons-container">
+      <a href="#grid-example-code"><span class="material-icons-outlined" onclick="expandCollapse('#grid-example-code')">
+          open_in_full </span></a>
+      <span class="material-icons-outlined" onclick="copyToClipboard('#grid-example-code')"> content_copy </span>
+    </div>
+
+
+
+    <p class="doc-txt">This grid layout contains 2 columns and 2 rows:</p>
+
+
     <!-- Live Code -->
-    <div class="content-container grid-main-container">
-      <div class="grid-container">
-        <div class="item1">Header</div>
-        <div class="item2">Menu</div>
-        <div class="item3">Main</div>
+    <div class="content-container">
+      <div class="container-2">
+        <header class="header" >Header</header>
+        <aside class="aside">menu</aside>
+        <main class="main">Content</main>
 
       </div>
     </div>
 
-    <!-- Live Code -->
-    <div class="content-container grid-main-container">
-      <div class="grid-container">
-        <div class="item1">Header</div>
-        <div class="item2">Menu</div>
-        <div class="item3">Main</div>
-        <div class="item4">Right</div>
-        <div class="item5">Footer</div>
-      </div>
+
+    <!-- Code-Snipet -->
+    <div class="example-code" id="grid-example-code">
+      <pre>
+        <code class="html">
+          &lt;div class="container-2"&gt;
+            &lt;header&gt;Header&lt;/header&gt;
+            &lt;aside&gt;Side bar&lt;/aside&gt;
+            &lt;main&gt;Content&lt;/main&gt;
+       
+          &lt;/div&gt;
+  </code>
+</pre>
     </div>
 
+
+
+    <!-- Icons to Copy and Expand Code -->
+    <div class="icons-container">
+      <a href="#grid-example-code"><span class="material-icons-outlined" onclick="expandCollapse('#grid-example-code')">
+          open_in_full </span></a>
+      <span class="material-icons-outlined" onclick="copyToClipboard('#grid-example-code')"> content_copy </span>
+    </div>
+    <!-- Scripts -->
+    <script src="/Docs/script.js" type="text/javascript"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 
 </html>
