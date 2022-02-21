@@ -1,5 +1,5 @@
 const modal = document.querySelector(".modal");
-const modal2 = document.querySelector(".type2");
+const modal2 = document.querySelector(".modal-with-btn");
 
 const openModal = (clas) => {
   console.log(modal.classList[0]);
