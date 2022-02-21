@@ -10,11 +10,12 @@
   z-index: 1;
 }
 
-.desktop-nav {
+.desktop-nav,.responsive-nav {
   justify-content: space-between;
   font-size: 1.3rem;
+  align-items: center;
 }
-.desktop-nav-list {
+.desktop-nav-list,.responsive-nav-list {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -26,9 +27,20 @@
   }
 }
 
-.desktop-list-item {
+.desktop-list-item,.responsive-list-item {
   margin-right: 2rem;
   color: var(--primary-color);
   font-weight: bolder;
   text-decoration: none;
+}
+.responsive-hamburger {
+  display: none;
+}
+@media only screen and (max-width: 1000px) {
+  .responsive-nav-list {
+    display: none;
+  }
+  .responsive-hamburger {
+    display: block;
+  }
 }
