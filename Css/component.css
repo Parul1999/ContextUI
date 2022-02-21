@@ -55,7 +55,7 @@
   --logo-filter: invert(84.2%) sepia(0%) saturate(67%) hue-rotate(199deg)
     brightness(103%) contrast(101%);
   --light-grey: #0c0505a6;
-  --dark-grey: #f1f1f14d;
+  --dark-grey: #f1f1f186;
 }
 
 /* Any element with the class "light-hidden" will be hidden when the site is set to Light Mode */

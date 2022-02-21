@@ -170,6 +170,7 @@ body {
 }
 .responsive-hamburger {
   align-self: center;
+  cursor: pointer;
   display: none;
   font-size: 2.5rem;
 }
@@ -280,4 +281,8 @@ body {
 .selected-item {
   background-color: var(--primary-color);
   color: var(--light-color);
+}
+/* For documentation , to show snackbar properly */
+.snackbar{
+  position: relative;
 }
