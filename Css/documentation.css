@@ -265,7 +265,7 @@ body {
   grid-area: main;
 }
 #show {
-  background-color: var(--success-bg-color);
+  background-color: var(--primary-color);
   border-radius: 10px;
   color: var(--light-color);
   display: none;
