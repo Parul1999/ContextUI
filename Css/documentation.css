@@ -1,16 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Sora:wght@400&display=swap");
-@import url("reset.css");
-:root {
-  --primary-color: #134e4a;
-  --secondary-color: #f0fdfa;
-  --warning-color: #ec942f;
-  --info-color: #0284c7;
-  --success-color: #129c70;
-  --error-color: #e63636;
-  --light-grey: #adabab23;
-  --dark-grey: #0c0505a6;
-  --font-style: "Sora", sans-serif;
-}
 
 body {
   font-family: var(--font-style);
