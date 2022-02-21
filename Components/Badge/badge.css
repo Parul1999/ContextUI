@@ -45,6 +45,7 @@
 .icon-badge {
   display: flex;
   position: relative;
+  align-self: flex-end;
 }
 .img-badge > img {
   border-radius: 50%;
