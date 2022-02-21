@@ -18,7 +18,6 @@
   margin: 1rem 0;
 }
 .sidebar > li:hover {
-  color: var(--secondary-color);
   font-size: 1.3rem;
 }
 .sidebar-item-selected {
