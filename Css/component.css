@@ -33,6 +33,8 @@
   --dark-grey-color: #a3a2a2;
   --grey-color: #d3d3d3d3;
   --gold-color: #ffd900e1;
+  --light-color: white;
+  --dark-color: rgb(41, 41, 41);
 }
 
 :root[color-mode="light"] {
