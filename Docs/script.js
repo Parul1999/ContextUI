@@ -119,14 +119,20 @@ const selectedItem = (e) => {
 }
 
 for (item of componentList) {
-  item.addEventListener("click", (e) => selectedComponent(e));
+  item.addEventListener("click", () => selectedComponent());
 }
-const showHideSidebar = (e) => {
+const showHideSidebar = () => {
   sidebar.classList.toggle("display-sidebar-on-top")
 }
-hamburger.addEventListener("click", (e) => showHideSidebar(e))
+if(hamburger!==null)
+{
+  hamburger.addEventListener("click", () => showHideSidebar())
+}
 
-const hideSidebar = (e) => {
+
+const hideSidebar = () => {
   sidebar.classList.remove("display-sidebar-on-top")
 }
-closeSidebar.addEventListener("click", (e) => hideSidebar(e))
+if(closeSidebar !==null){
+closeSidebar.addEventListener("click", () => hideSidebar())
+}
