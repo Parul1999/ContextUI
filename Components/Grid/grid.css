@@ -110,22 +110,22 @@ body {
 }
 
 
-header {
-  background-color: blue;
+.header {
+  background-color: var(--offline-color);
   grid-area: header;
 }
 
-aside {
-  background-color: hotpink;
+.aside {
+  background-color: var(--online-color);
   grid-area: aside;
 }
 
-main {
-  background-color: maroon;
+.main {
+  background-color: var(--gold-color);
   grid-area: main;
 }
 
-footer {
-  background-color: red;
+.footer {
+  background-color: var(--warning-bg-color);
   grid-area: footer;
 }

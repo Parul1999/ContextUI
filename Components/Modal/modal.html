@@ -44,11 +44,6 @@
             </span>
             <span class="modal-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
                 Ipsum has been the industry's standard dummy text ever since the 1500s, </span>
-            <div class="modal-footer">
-                <!-- <button class="modal-click-btn">RETRY</button> -->
-
-            </div>
-
         </div>
     </div>
 
@@ -66,12 +61,22 @@
       </code>
   </pre>
     </div>
-
+   <!-- Icons to Copy and Expand Code -->
+   <div class="icons-container">
+    <a href="#modal-example-code">
+        <span class="material-icons-outlined" onclick="expandCollapse('#modal-example-code')">
+            open_in_full
+        </span>
+    </a>
+    <span class="material-icons-outlined" onclick="copyToClipboard('#modal-example-code')">
+        content_copy
+    </span>
+</div>
 
     <div class="content-container">
-        <button class="modal-btn modal-baseline" onclick="openModal('type2')">modal 1</button>
+        <button class="modal-btn modal-baseline" onclick="openModal('modal-with-btn')">modal 2</button>
 
-        <div class="modal type2 ">
+        <div class="modal modal-with-btn ">
             <span class="material-icons-outlined modal-close" onclick="onClose()">
                 close
             </span>
@@ -86,10 +91,10 @@
     </div>
 
     <!-- Code-Snipet -->
-    <div class="example-code" id="modal-example-code">
+    <div class="example-code" id="modal-btn-example-code">
         <pre>
           <code class="html">
-    &lt;div class="modal type2"&gt;
+    &lt;div class="modal modal-btn"&gt;
         &lt;span class="material-icons-outlined modal-close" onclick="onClose()"&gt;
             close
         &lt;/span&gt;
@@ -105,12 +110,12 @@
     </div>
     <!-- Icons to Copy and Expand Code -->
     <div class="icons-container">
-        <a href="#modal-example-code">
-            <span class="material-icons-outlined" onclick="expandCollapse('#modal-example-code')">
+        <a href="#modal-btn-example-code">
+            <span class="material-icons-outlined" onclick="expandCollapse('#modal-btn-example-code')">
                 open_in_full
             </span>
         </a>
-        <span class="material-icons-outlined" onclick="copyToClipboard('#modal-badge-example-code')">
+        <span class="material-icons-outlined" onclick="copyToClipboard('#modal-btn-example-code')">
             content_copy
         </span>
     </div>
