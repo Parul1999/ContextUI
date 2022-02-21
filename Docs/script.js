@@ -7,7 +7,7 @@ const sidebar = document.querySelector(".doc-sidebar-on-top");
 const closeSidebar = document.querySelector(".close-sidebar");
 const showCopyTag = document.querySelector("#show")
 // Get the buttons in the DOM
-const toggleColorButtons = document.querySelectorAll(".color-mode__btn");
+const toggleColorButtons = document.querySelectorAll(".color-mode-btn");
 const styleSelected = {
   "background-color": "var(--primary-color)",
   color: "var(--light-color)",
@@ -21,14 +21,14 @@ let i = 0;
 
 const toggleColorMode = e => {
   // Switch to Light Mode
-  if (e.currentTarget.classList.contains("light--hidden")) {
+  if (e.currentTarget.classList.contains("light-hidden")) {
     document.documentElement.setAttribute("color-mode", "light");
     localStorage.setItem("color-mode", "light")
     return;
   }
-  if (e.currentTarget.classList.contains("dark--hidden")) {
-    document.documentElement.setAttribute("color-mode", "light");
-    localStorage.setItem("color-mode", "light")
+  if (e.currentTarget.classList.contains("dark-hidden")) {
+    document.documentElement.setAttribute("color-mode", "dark");
+    localStorage.setItem("color-mode", "dark")
     return;
   }
 };
