@@ -25,7 +25,7 @@
   justify-content: space-between;
   list-style: none;
 }
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 300px) {
   .desktop-nav-list {
     flex-direction: column;
   }
