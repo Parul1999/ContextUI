@@ -36,3 +36,7 @@ In order to link components of Sharky to your project, Copy the Link given below
 - TextUtilities
 
 ## Preview 
+
+https://user-images.githubusercontent.com/45730946/155043397-4bf38ecb-4c1b-4a27-a545-705181f97446.mp4
+
+
