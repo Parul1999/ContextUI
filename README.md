@@ -16,7 +16,6 @@ In order to link components of Sharky to your project, Copy the Link given below
 ```html
 <link rel="stylesheet" href="https://sharkyui.netlify.app/css/component.css"/>
 ```
-
 ## Components
 
 - Alert
@@ -39,4 +38,13 @@ In order to link components of Sharky to your project, Copy the Link given below
 
 https://user-images.githubusercontent.com/45730946/155043397-4bf38ecb-4c1b-4a27-a545-705181f97446.mp4
 
+## External Links
+- FONT FAMILY
+```css 
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Sora:wght@400&display=swap");
+```
+- ICONS
+```css 
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons+Outlined");
+```
 
